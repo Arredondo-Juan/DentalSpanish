@@ -36,3 +36,8 @@ struct FlashcardListView: View {
         }
     }
 }
+
+#Preview {
+    FlashcardListView(deckType: .terms)
+        .environmentObject(FlashcardViewModel())
+}
