@@ -18,6 +18,7 @@
 		DC140B712C53382800B47616 /* AddCustomFlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC140B702C53382800B47616 /* AddCustomFlashcardView.swift */; };
 		DC56432F2C53D82A001A01A8 /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC56432E2C53D82A001A01A8 /* FlashcardView.swift */; };
 		DC5643312C53D9AD001A01A8 /* FlashcardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5643302C53D9AC001A01A8 /* FlashcardDetailView.swift */; };
+		DC5643332C5423EA001A01A8 /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5643322C5423EA001A01A8 /* DraggableCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		DC140B702C53382800B47616 /* AddCustomFlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomFlashcardView.swift; sourceTree = "<group>"; };
 		DC56432E2C53D82A001A01A8 /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
 		DC5643302C53D9AC001A01A8 /* FlashcardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardDetailView.swift; sourceTree = "<group>"; };
+		DC5643322C5423EA001A01A8 /* DraggableCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				DC140B702C53382800B47616 /* AddCustomFlashcardView.swift */,
 				DC56432E2C53D82A001A01A8 /* FlashcardView.swift */,
 				DC5643302C53D9AC001A01A8 /* FlashcardDetailView.swift */,
+				DC5643322C5423EA001A01A8 /* DraggableCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC5643332C5423EA001A01A8 /* DraggableCardView.swift in Sources */,
 				DC140B712C53382800B47616 /* AddCustomFlashcardView.swift in Sources */,
 				DC140B6D2C53340D00B47616 /* FlashcardViewModel.swift in Sources */,
 				DC5643312C53D9AD001A01A8 /* FlashcardDetailView.swift in Sources */,

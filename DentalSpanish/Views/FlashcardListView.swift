@@ -10,33 +10,41 @@ import SwiftUI
 struct FlashcardListView: View {
     @EnvironmentObject var viewModel: FlashcardViewModel
     var deckType: DeckType
+    @State private var flashcards: [Flashcard]
+
+    init(deckType: DeckType) {
+        self.deckType = deckType
+        _flashcards = State(initialValue: [])
+    }
 
     var body: some View {
-        TabView {
+        ZStack {
             ForEach(flashcards) { flashcard in
-                FlashcardView(flashcard: flashcard)
-                    .padding(.horizontal)
+                DraggableCardView(flashcards: $flashcards, flashcard: flashcard)
             }
+            .font(.largeTitle)
+            .fontWeight(.bold)
+            .foregroundStyle(Color.white)
+            .frame(width: 300, height: 180)
+                .shadow(radius: 5, y: 5)
         }
-        .tabViewStyle(PageTabViewStyle())
-        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+        .onAppear {
+            loadFlashcards()
+        }
         .navigationTitle(deckType.rawValue)
     }
 
-    var flashcards: [Flashcard] {
+    private func loadFlashcards() {
         switch deckType {
         case .terms:
-            return viewModel.termsDeck
+            flashcards = viewModel.termsDeck
         case .phrases:
-            return viewModel.phrasesDeck
+            flashcards = viewModel.phrasesDeck
         case .custom:
-            return viewModel.customDeck
+            flashcards = viewModel.customDeck
         }
     }
 }
-
-
-
 
 #Preview {
     FlashcardListView(deckType: .terms)
