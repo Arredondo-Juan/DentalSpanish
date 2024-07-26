@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct FlashcardApp: App {
-    @StateObject private var viewModel = FlashcardViewModel() // Create the ViewModel instance here
+    @StateObject private var viewModel = FlashcardViewModel()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(viewModel) // Provide the ViewModel as an EnvironmentObject
+                .environmentObject(viewModel)
         }
     }
 }

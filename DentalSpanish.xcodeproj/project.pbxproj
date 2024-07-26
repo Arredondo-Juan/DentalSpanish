@@ -16,6 +16,8 @@
 		DC140B6D2C53340D00B47616 /* FlashcardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC140B6C2C53340D00B47616 /* FlashcardViewModel.swift */; };
 		DC140B6F2C53369E00B47616 /* FlashcardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC140B6E2C53369E00B47616 /* FlashcardListView.swift */; };
 		DC140B712C53382800B47616 /* AddCustomFlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC140B702C53382800B47616 /* AddCustomFlashcardView.swift */; };
+		DC56432F2C53D82A001A01A8 /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC56432E2C53D82A001A01A8 /* FlashcardView.swift */; };
+		DC5643312C53D9AD001A01A8 /* FlashcardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5643302C53D9AC001A01A8 /* FlashcardDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		DC140B6C2C53340D00B47616 /* FlashcardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardViewModel.swift; sourceTree = "<group>"; };
 		DC140B6E2C53369E00B47616 /* FlashcardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardListView.swift; sourceTree = "<group>"; };
 		DC140B702C53382800B47616 /* AddCustomFlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomFlashcardView.swift; sourceTree = "<group>"; };
+		DC56432E2C53D82A001A01A8 /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
+		DC5643302C53D9AC001A01A8 /* FlashcardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				DC140B542C5331E300B47616 /* ContentView.swift */,
 				DC140B6E2C53369E00B47616 /* FlashcardListView.swift */,
 				DC140B702C53382800B47616 /* AddCustomFlashcardView.swift */,
+				DC56432E2C53D82A001A01A8 /* FlashcardView.swift */,
+				DC5643302C53D9AC001A01A8 /* FlashcardDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,7 +184,9 @@
 			files = (
 				DC140B712C53382800B47616 /* AddCustomFlashcardView.swift in Sources */,
 				DC140B6D2C53340D00B47616 /* FlashcardViewModel.swift in Sources */,
+				DC5643312C53D9AD001A01A8 /* FlashcardDetailView.swift in Sources */,
 				DC140B692C53338200B47616 /* Flashcard.swift in Sources */,
+				DC56432F2C53D82A001A01A8 /* FlashcardView.swift in Sources */,
 				DC140B552C5331E300B47616 /* ContentView.swift in Sources */,
 				DC140B6B2C5333B900B47616 /* DeckType.swift in Sources */,
 				DC140B532C5331E300B47616 /* DentalSpanishApp.swift in Sources */,

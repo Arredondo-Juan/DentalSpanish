@@ -8,20 +8,18 @@
 import SwiftUI
 
 struct FlashcardListView: View {
-    @EnvironmentObject var viewModel: FlashcardViewModel // Inject the EnvironmentObject here
+    @EnvironmentObject var viewModel: FlashcardViewModel
     var deckType: DeckType
 
     var body: some View {
-        List {
+        TabView {
             ForEach(flashcards) { flashcard in
-                VStack(alignment: .leading) {
-                    Text(flashcard.term)
-                        .font(.headline)
-                    Text(flashcard.definition)
-                        .font(.subheadline)
-                }
+                FlashcardView(flashcard: flashcard)
+                    .padding(.horizontal)
             }
         }
+        .tabViewStyle(PageTabViewStyle())
+        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
         .navigationTitle(deckType.rawValue)
     }
 
@@ -36,6 +34,9 @@ struct FlashcardListView: View {
         }
     }
 }
+
+
+
 
 #Preview {
     FlashcardListView(deckType: .terms)
