@@ -11,6 +11,11 @@
 		DC140B552C5331E300B47616 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC140B542C5331E300B47616 /* ContentView.swift */; };
 		DC140B572C5331E500B47616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC140B562C5331E500B47616 /* Assets.xcassets */; };
 		DC140B5A2C5331E500B47616 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC140B592C5331E500B47616 /* Preview Assets.xcassets */; };
+		DC140B692C53338200B47616 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC140B682C53338200B47616 /* Flashcard.swift */; };
+		DC140B6B2C5333B900B47616 /* DeckType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC140B6A2C5333B900B47616 /* DeckType.swift */; };
+		DC140B6D2C53340D00B47616 /* FlashcardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC140B6C2C53340D00B47616 /* FlashcardViewModel.swift */; };
+		DC140B6F2C53369E00B47616 /* FlashcardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC140B6E2C53369E00B47616 /* FlashcardListView.swift */; };
+		DC140B712C53382800B47616 /* AddCustomFlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC140B702C53382800B47616 /* AddCustomFlashcardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		DC140B542C5331E300B47616 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DC140B562C5331E500B47616 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC140B592C5331E500B47616 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC140B682C53338200B47616 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		DC140B6A2C5333B900B47616 /* DeckType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckType.swift; sourceTree = "<group>"; };
+		DC140B6C2C53340D00B47616 /* FlashcardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardViewModel.swift; sourceTree = "<group>"; };
+		DC140B6E2C53369E00B47616 /* FlashcardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardListView.swift; sourceTree = "<group>"; };
+		DC140B702C53382800B47616 /* AddCustomFlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomFlashcardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,10 @@
 		DC140B512C5331E300B47616 /* DentalSpanish */ = {
 			isa = PBXGroup;
 			children = (
+				DC140B672C53336000B47616 /* Views */,
+				DC140B662C53335500B47616 /* ViewModels */,
+				DC140B652C53334E00B47616 /* Models */,
 				DC140B522C5331E300B47616 /* DentalSpanishApp.swift */,
-				DC140B542C5331E300B47616 /* ContentView.swift */,
 				DC140B562C5331E500B47616 /* Assets.xcassets */,
 				DC140B582C5331E500B47616 /* Preview Content */,
 			);
@@ -65,6 +77,33 @@
 				DC140B592C5331E500B47616 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DC140B652C53334E00B47616 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC140B682C53338200B47616 /* Flashcard.swift */,
+				DC140B6A2C5333B900B47616 /* DeckType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DC140B662C53335500B47616 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DC140B6C2C53340D00B47616 /* FlashcardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DC140B672C53336000B47616 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC140B542C5331E300B47616 /* ContentView.swift */,
+				DC140B6E2C53369E00B47616 /* FlashcardListView.swift */,
+				DC140B702C53382800B47616 /* AddCustomFlashcardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC140B712C53382800B47616 /* AddCustomFlashcardView.swift in Sources */,
+				DC140B6D2C53340D00B47616 /* FlashcardViewModel.swift in Sources */,
+				DC140B692C53338200B47616 /* Flashcard.swift in Sources */,
 				DC140B552C5331E300B47616 /* ContentView.swift in Sources */,
+				DC140B6B2C5333B900B47616 /* DeckType.swift in Sources */,
 				DC140B532C5331E300B47616 /* DentalSpanishApp.swift in Sources */,
+				DC140B6F2C53369E00B47616 /* FlashcardListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

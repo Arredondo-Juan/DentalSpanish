@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct DentalSpanishApp: App {
+struct FlashcardApp: App {
+    @StateObject private var viewModel = FlashcardViewModel() // Create the ViewModel instance here
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(viewModel) // Provide the ViewModel as an EnvironmentObject
         }
     }
 }
