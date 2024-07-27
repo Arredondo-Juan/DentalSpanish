@@ -23,6 +23,7 @@ struct DraggableCardView: View {
             } else {
                 Text(flashcard.definition)
                     .font(.title)
+                    .fontWeight(.semibold)
                     .padding()
                     .frame(width: 300, height: 180)
                     .background(RoundedRectangle(cornerRadius: 15)
@@ -31,7 +32,7 @@ struct DraggableCardView: View {
             }
         }
         .offset(x: offset.width, y: offset.height)
-        .rotationEffect(.degrees(Double(offset.width / 10))) // Add rotation effect for realism
+        .rotationEffect(.degrees(Double(offset.width / 10)))
         .gesture(
             DragGesture()
                 .onChanged { gesture in
@@ -53,5 +54,10 @@ struct DraggableCardView: View {
                     }
                 }
         )
+        .onTapGesture {
+            withAnimation {
+                showingTerm.toggle()
+            }
+        }
     }
 }
