@@ -13,46 +13,47 @@ struct DraggableCardView: View {
             if showingTerm {
                 Text(flashcard.term)
                     .font(.title)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .fontWeight(.bold)
                     .padding()
-                    .background(Color.white)
-                    .cornerRadius(15)
-                    .shadow(radius: 5)
+                    .frame(width: 300, height: 180)
+                    .background(RoundedRectangle(cornerRadius: 15)
+                        .fill(Color.white)
+                        .shadow(radius: 5, y: 5))
+                    
             } else {
                 Text(flashcard.definition)
-                    .font(.body)
+                    .font(.title)
                     .padding()
-                    .background(Color.white)
-                    .cornerRadius(15)
-                    .shadow(radius: 5)
+                    .frame(width: 300, height: 180)
+                    .background(RoundedRectangle(cornerRadius: 15)
+                        .fill(Color.white)
+                        .shadow(radius: 5, y: 5))
             }
         }
-        .frame(width: 320, height: 200)
-        .background(Color.blue.opacity(0.1))
-        .cornerRadius(15)
-        .shadow(radius: 10)
-        .offset(offset)
+        .offset(x: offset.width, y: offset.height)
+        .rotationEffect(.degrees(Double(offset.width / 10))) // Add rotation effect for realism
         .gesture(
             DragGesture()
                 .onChanged { gesture in
                     self.offset = gesture.translation
                 }
-                .onEnded { _ in
-                    if abs(self.offset.width) > 100 {
-                        if self.offset.width > 0 {
-                            // Swipe right - dismiss
-                            self.flashcards.removeAll { $0.id == self.flashcard.id }
-                        } else {
-                            // Swipe left - save card
-                            viewModel.saveFlashcard(self.flashcard)
-                            self.flashcards.removeAll { $0.id == self.flashcard.id }
+                .onEnded { gesture in
+                    withAnimation {
+                        if abs(self.offset.width) > 100 {
+                            if self.offset.width > 0 {
+                                // Swipe right - dismiss
+                                self.flashcards.removeAll { $0.id == self.flashcard.id }
+                            } else {
+                                // Swipe left - save card
+                                viewModel.saveFlashcard(self.flashcard)
+                                self.flashcards.removeAll { $0.id == self.flashcard.id }
+                            }
                         }
+                        self.offset = .zero
                     }
-                    self.offset = .zero
                 }
         )
         .onTapGesture {
-            // Toggle between term and definition
             withAnimation {
                 showingTerm.toggle()
             }
@@ -76,4 +77,3 @@ struct DraggableCardView: View {
         }
     }
 }
-

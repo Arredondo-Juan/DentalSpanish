@@ -49,8 +49,6 @@ struct FlashcardListView: View {
             ZStack {
                 ForEach(Array(flashcards.enumerated()), id: \.element.id) { index, flashcard in
                     DraggableCardView(flashcards: $flashcards, flashcard: flashcard)
-                        .offset(x: CGFloat(index) * 5, y: CGFloat(index) * 5)
-                        .scaleEffect(1 - CGFloat(index) * 0.02)
                 }
             }
             .padding()
