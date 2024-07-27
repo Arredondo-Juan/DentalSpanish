@@ -11,25 +11,41 @@ struct FlashcardListView: View {
     @EnvironmentObject var viewModel: FlashcardViewModel
     var deckType: DeckType
     @State private var flashcards: [Flashcard] = []
-
+    
     init(deckType: DeckType) {
         self.deckType = deckType
     }
-
+    
     var body: some View {
         VStack {
             if deckType == .custom {
                 NavigationLink(destination: AddCustomFlashcardView()
                     .environmentObject(viewModel)) {
-                    Text("Add Custom Flashcard")
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        .padding()
-                }
+                        VStack {
+                            if flashcards.isEmpty {
+                                Text("No cards available")
+                                    .foregroundColor(.gray)
+                                    .padding()
+                            
+                            Text("Add Custom Flashcard")
+                                .padding()
+                                .background(Color.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                                .padding()
+                            } else {
+                                Text("Add More Flashcards")
+                                    .padding()
+                                    .background(Color.blue)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(10)
+                                    .padding()
+                            }
+                        }
+                        
+                    }
             }
-
+            
             ZStack {
                 ForEach(Array(flashcards.enumerated()), id: \.element.id) { index, flashcard in
                     DraggableCardView(flashcards: $flashcards, flashcard: flashcard)
@@ -38,7 +54,7 @@ struct FlashcardListView: View {
                 }
             }
             .padding()
-
+            
             if !flashcards.isEmpty {
                 Text("Cards left: \(flashcards.count)")
                     .font(.subheadline)
@@ -50,7 +66,7 @@ struct FlashcardListView: View {
         }
         .navigationTitle(deckType.rawValue)
     }
-
+    
     private func loadFlashcards() {
         switch deckType {
         case .terms:

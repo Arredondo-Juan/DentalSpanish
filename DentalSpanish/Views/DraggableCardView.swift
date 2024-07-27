@@ -12,18 +12,25 @@ struct DraggableCardView: View {
         VStack {
             if showingTerm {
                 Text(flashcard.term)
-                    .font(.headline)
+                    .font(.title)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .padding()
+                    .background(Color.white)
+                    .cornerRadius(15)
+                    .shadow(radius: 5)
             } else {
                 Text(flashcard.definition)
-                    .font(.subheadline)
+                    .font(.body)
                     .padding()
+                    .background(Color.white)
+                    .cornerRadius(15)
+                    .shadow(radius: 5)
             }
         }
-        .frame(width: 300, height: 200)
-        .background(Color.white)
-        .cornerRadius(10)
-        .shadow(radius: 5)
+        .frame(width: 320, height: 200)
+        .background(Color.blue.opacity(0.1))
+        .cornerRadius(15)
+        .shadow(radius: 10)
         .offset(offset)
         .gesture(
             DragGesture()
@@ -69,3 +76,4 @@ struct DraggableCardView: View {
         }
     }
 }
+
