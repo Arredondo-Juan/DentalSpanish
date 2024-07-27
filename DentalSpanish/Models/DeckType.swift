@@ -11,5 +11,4 @@ enum DeckType: String, CaseIterable {
     case terms = "Terms"
     case phrases = "Phrases"
     case saved = "Saved"
-    case custom = "Custom Deck"
 }

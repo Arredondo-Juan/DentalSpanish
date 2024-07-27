@@ -10,7 +10,7 @@ import SwiftUI
 struct FlashcardView: View {
     var flashcard: Flashcard
     @State private var isFlipped = false
-
+    
     var body: some View {
         VStack {
             if isFlipped {

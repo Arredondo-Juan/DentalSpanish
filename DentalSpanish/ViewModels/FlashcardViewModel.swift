@@ -10,13 +10,12 @@ import SwiftUI
 class FlashcardViewModel: ObservableObject {
     @Published var termsDeck: [Flashcard] = []
     @Published var phrasesDeck: [Flashcard] = []
-    @Published var customDeck: [Flashcard] = []
     @Published var savedDeck: [Flashcard] = []
-
+    
     init() {
         loadFlashcards()
     }
-
+    
     func loadFlashcards() {
         if let url = Bundle.main.url(forResource: "dentalspanishdata", withExtension: "json") {
             do {
@@ -29,14 +28,13 @@ class FlashcardViewModel: ObservableObject {
             }
         }
     }
-
+    
     func saveFlashcard(_ flashcard: Flashcard) {
         if !savedDeck.contains(flashcard) {
             savedDeck.append(flashcard)
         }
     }
-
+    
     func addCustomFlashcard(_ flashcard: Flashcard) {
-        customDeck.append(flashcard)
     }
 }

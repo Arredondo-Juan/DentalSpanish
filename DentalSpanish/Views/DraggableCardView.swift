@@ -7,7 +7,7 @@ struct DraggableCardView: View {
     @State private var offset: CGSize = .zero
     @State private var showingDeleteConfirmation = false
     @State private var showingTerm = true // Tracks which side is visible
-
+    
     var body: some View {
         VStack {
             if showingTerm {
@@ -19,7 +19,7 @@ struct DraggableCardView: View {
                     .background(RoundedRectangle(cornerRadius: 15)
                         .fill(Color.white)
                         .shadow(radius: 5, y: 5))
-                    
+                
             } else {
                 Text(flashcard.definition)
                     .font(.title)
@@ -53,27 +53,5 @@ struct DraggableCardView: View {
                     }
                 }
         )
-        .onTapGesture {
-            withAnimation {
-                showingTerm.toggle()
-            }
-        }
-        .contextMenu {
-            Button(action: {
-                showingDeleteConfirmation = true
-            }) {
-                Label("Delete", systemImage: "trash")
-            }
-        }
-        .alert(isPresented: $showingDeleteConfirmation) {
-            Alert(
-                title: Text("Delete Card"),
-                message: Text("Are you sure you want to delete this flashcard?"),
-                primaryButton: .destructive(Text("Delete")) {
-                    self.flashcards.removeAll { $0.id == self.flashcard.id }
-                },
-                secondaryButton: .cancel()
-            )
-        }
     }
 }
