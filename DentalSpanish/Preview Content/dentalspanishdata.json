@@ -1,56 +1,328 @@
 {
    "termsDeck":[
       {
-         "term":"Tooth",
-         "definition":"Diente"
+         "term":"Abscess",
+         "definition":"Absceso"
       },
       {
-         "term":"Teeth",
-         "definition":"Dientes"
+         "term":"Abrasive",
+         "definition":"Abrasivo"
       },
       {
-         "term":"Gums",
-         "definition":"Encías"
+         "term":"Anesthesia",
+         "definition":"Anestesia"
+      },
+      {
+         "term":"Biopsy",
+         "definition":"Biopsia"
+      },
+      {
+         "term":"Bite",
+         "definition":"Mordida"
+      },
+      {
+         "term":"Bleaching",
+         "definition":"Blanqueamiento"
+      },
+      {
+         "term":"Bridge",
+         "definition":"Puente"
+      },
+      {
+         "term":"Braces",
+         "definition":"Brackets"
+      },
+      {
+         "term":"Bruxism",
+         "definition":"Bruxismo"
+      },
+      {
+         "term":"Calculus",
+         "definition":"Cálculo"
+      },
+      {
+         "term":"Canal",
+         "definition":"Canal"
+      },
+      {
+         "term":"Canine",
+         "definition":"Canino"
       },
       {
          "term":"Cavity",
          "definition":"Caries"
       },
       {
-         "term":"Filling",
-         "definition":"Empaste"
+         "term":"Cementum",
+         "definition":"Cemento"
+      },
+      {
+         "term":"Check-up",
+         "definition":"Chequeo"
+      },
+      {
+         "term":"Cleaning",
+         "definition":"Limpieza"
+      },
+      {
+         "term":"Clenching",
+         "definition":"Apretamiento"
+      },
+      {
+         "term":"Composite",
+         "definition":"Composite"
       },
       {
          "term":"Crown",
          "definition":"Corona"
       },
       {
-         "term":"Root Canal",
-         "definition":"Endodoncia"
+         "term":"Cosmetic",
+         "definition":"Cosmético"
       },
       {
-         "term":"Extraction",
-         "definition":"Extracción"
+         "term":"Cusp",
+         "definition":"Cúspide"
       },
       {
-         "term":"Braces",
-         "definition":"Frenos / Brackets"
+         "term":"Decay",
+         "definition":"Descomposición"
       },
       {
-         "term":"Retainer",
-         "definition":"Retenedor"
+         "term":"Desensitizing",
+         "definition":"Desensibilizante"
+      },
+      {
+         "term":"Dentin",
+         "definition":"Dentina"
       },
       {
          "term":"Dentist",
          "definition":"Dentista"
       },
       {
-         "term":"Dental Hygienist",
-         "definition":"Higienista dental"
+         "term":"Dentures",
+         "definition":"Dentadura postiza"
       },
       {
-         "term":"Dental Floss",
+         "term":"Diagnosis",
+         "definition":"Diagnóstico"
+      },
+      {
+         "term":"Diastema",
+         "definition":"Diastema"
+      },
+      {
+         "term":"Dry socket",
+         "definition":"Alveolitis"
+      },
+      {
+         "term":"Edentulous",
+         "definition":"Desdentado"
+      },
+      {
+         "term":"Enamel",
+         "definition":"Esmalte"
+      },
+      {
+         "term":"Eruption",
+         "definition":"Erupción"
+      },
+      {
+         "term":"Extraction",
+         "definition":"Extracción"
+      },
+      {
+         "term":"Filling",
+         "definition":"Relleno"
+      },
+      {
+         "term":"Fistula",
+         "definition":"Fístula"
+      },
+      {
+         "term":"Floss",
          "definition":"Hilo dental"
+      },
+      {
+         "term":"Fluoride",
+         "definition":"Fluoruro"
+      },
+      {
+         "term":"Gingivitis",
+         "definition":"Gingivitis"
+      },
+      {
+         "term":"Gum",
+         "definition":"Encía"
+      },
+      {
+         "term":"Hemorrhage",
+         "definition":"Hemorragia"
+      },
+      {
+         "term":"Impacted tooth",
+         "definition":"Diente impactado"
+      },
+      {
+         "term":"Implant",
+         "definition":"Implante"
+      },
+      {
+         "term":"Incisor",
+         "definition":"Incisivo"
+      },
+      {
+         "term":"Inlay",
+         "definition":"Incrustación"
+      },
+      {
+         "term":"Lesion",
+         "definition":"Lesión"
+      },
+      {
+         "term":"Malocclusion",
+         "definition":"Maloclusión"
+      },
+      {
+         "term":"Mandible",
+         "definition":"Mandíbula"
+      },
+      {
+         "term":"Maxilla",
+         "definition":"Maxilar"
+      },
+      {
+         "term":"Molar",
+         "definition":"Molar"
+      },
+      {
+         "term":"Mouthwash",
+         "definition":"Enjuague bucal"
+      },
+      {
+         "term":"Night guard",
+         "definition":"Protector nocturno"
+      },
+      {
+         "term":"Occlusion",
+         "definition":"Oclusión"
+      },
+      {
+         "term":"Oral",
+         "definition":"Oral"
+      },
+      {
+         "term":"Oral cancer",
+         "definition":"Cáncer oral"
+      },
+      {
+         "term":"Oral hygiene",
+         "definition":"Higiene oral"
+      },
+      {
+         "term":"Oral surgery",
+         "definition":"Cirugía oral"
+      },
+      {
+         "term":"Orthodontist",
+         "definition":"Ortodontista"
+      },
+      {
+         "term":"Overbite",
+         "definition":"Sobremordida"
+      },
+      {
+         "term":"Palate",
+         "definition":"Paladar"
+      },
+      {
+         "term":"Panoramic",
+         "definition":"Panorámica"
+      },
+      {
+         "term":"Pedodontics",
+         "definition":"Pedodoncia"
+      },
+      {
+         "term":"Periodontal",
+         "definition":"Periodontal"
+      },
+      {
+         "term":"Periodontitis",
+         "definition":"Periodontitis"
+      },
+      {
+         "term":"Plaque",
+         "definition":"Placa"
+      },
+      {
+         "term":"Premolar",
+         "definition":"Premolar"
+      },
+      {
+         "term":"Prosthesis",
+         "definition":"Prótesis"
+      },
+      {
+         "term":"Pulp",
+         "definition":"Pulpa"
+      },
+      {
+         "term":"Radiograph",
+         "definition":"Radiografía"
+      },
+      {
+         "term":"Retainer",
+         "definition":"Retenedor"
+      },
+      {
+         "term":"Resin",
+         "definition":"Resina"
+      },
+      {
+         "term":"Root",
+         "definition":"Raíz"
+      },
+      {
+         "term":"Root canal",
+         "definition":"Endodoncia"
+      },
+      {
+         "term":"Scaling",
+         "definition":"Raspado"
+      },
+      {
+         "term":"Sealant",
+         "definition":"Sellador"
+      },
+      {
+         "term":"Sensitivity",
+         "definition":"Sensibilidad"
+      },
+      {
+         "term":"Sinus",
+         "definition":"Seno"
+      },
+      {
+         "term":"Suture",
+         "definition":"Sutura"
+      },
+      {
+         "term":"Temporomandibular",
+         "definition":"Temporomandibular"
+      },
+      {
+         "term":"Tartar",
+         "definition":"Sarro"
+      },
+      {
+         "term":"TMJ",
+         "definition":"ATM"
+      },
+      {
+         "term":"Tooth",
+         "definition":"Diente"
       },
       {
          "term":"Toothbrush",
@@ -61,126 +333,430 @@
          "definition":"Pasta de dientes"
       },
       {
-         "term":"Mouthwash",
-         "definition":"Enjuague bucal"
+         "term":"Ulcer",
+         "definition":"Úlcera"
       },
       {
-         "term":"Plaque",
-         "definition":"Placa"
+         "term":"Underbite",
+         "definition":"Mordida invertida"
       },
       {
-         "term":"Tartar",
-         "definition":"Sarro"
+         "term":"Unerupted",
+         "definition":"No erupcionado"
       },
       {
-         "term":"Gingivitis",
-         "definition":"Gingivitis"
+         "term":"Veneer",
+         "definition":"Carilla"
       },
       {
-         "term":"Periodontitis",
-         "definition":"Periodontitis"
+         "term":"Whitening",
+         "definition":"Blanqueamiento"
       },
       {
-         "term":"Orthodontist",
-         "definition":"Ortodoncista"
-      },
-      {
-         "term":"Dental Implant",
-         "definition":"Implante dental"
-      },
-      {
-         "term":"Wisdom Teeth",
+         "term":"Wisdom teeth",
          "definition":"Muelas del juicio"
       },
       {
-         "term":"Bite",
-         "definition":"Mordida"
-      },
-      {
-         "term":"Jaw",
-         "definition":"Mandíbula"
+         "term":"Wisdom tooth",
+         "definition":"Muela del juicio"
       },
       {
          "term":"X-ray",
          "definition":"Radiografía"
       },
       {
-         "term":"Fluoride",
-         "definition":"Flúor"
+         "term":"X-ray film",
+         "definition":"Película de rayos X"
       },
       {
-         "term":"Scaling",
-         "definition":"Raspado"
+         "term":"Xerostomia",
+         "definition":"Xerostomía"
       },
       {
-         "term":"Dentures",
-         "definition":"Dentadura postiza"
-      },
-      {
-         "term":"Sensitive Teeth",
-         "definition":"Dientes sensibles"
+         "term":"Zygomatic",
+         "definition":"Cigomático"
       }
    ],
    "phrasesDeck":[
       {
-         "term":"This tooth will need a root canal and crown.",
-         "definition":"Este diente necesitará una endodoncia y una corona."
+         "term":"Are you experiencing any pain?",
+         "definition":"¿Está experimentando algún dolor?"
       },
       {
-         "term":"Is it sensitive to hot or cold?",
-         "definition":"¿Es sensible al calor o al frío?"
+         "term":"Bite down gently.",
+         "definition":"Muerda suavemente."
       },
       {
-         "term":"Do you have any pain or discomfort?",
-         "definition":"¿Tiene algún dolor o molestia?"
+         "term":"Can you open your mouth wider?",
+         "definition":"¿Puede abrir más la boca?"
+      },
+      {
+         "term":"Do you brush your teeth twice a day?",
+         "definition":"¿Se cepilla los dientes dos veces al día?"
+      },
+      {
+         "term":"Do you floss regularly?",
+         "definition":"¿Usa hilo dental regularmente?"
+      },
+      {
+         "term":"Do you grind your teeth?",
+         "definition":"¿Rechina los dientes?"
+      },
+      {
+         "term":"Do you have any allergies?",
+         "definition":"¿Tiene alguna alergia?"
+      },
+      {
+         "term":"Do you have any discomfort?",
+         "definition":"¿Tiene alguna molestia?"
+      },
+      {
+         "term":"Do you have any medical conditions?",
+         "definition":"¿Tiene alguna condición médica?"
+      },
+      {
+         "term":"Do you have dental insurance?",
+         "definition":"¿Tiene seguro dental?"
+      },
+      {
+         "term":"Does it hurt when you chew?",
+         "definition":"¿Le duele cuando mastica?"
+      },
+      {
+         "term":"Does the pain wake you up at night?",
+         "definition":"¿El dolor lo despierta por la noche?"
+      },
+      {
+         "term":"Drink plenty of water.",
+         "definition":"Beba mucha agua."
+      },
+      {
+         "term":"Have you had any dental work done before?",
+         "definition":"¿Le han hecho algún trabajo dental antes?"
       },
       {
          "term":"How long have you had this pain?",
          "definition":"¿Cuánto tiempo ha tenido este dolor?"
       },
       {
-         "term":"You need to brush and floss your teeth daily.",
-         "definition":"Necesita cepillarse y usar hilo dental todos los días."
+         "term":"I am going to take an X-ray.",
+         "definition":"Voy a tomar una radiografía."
       },
       {
-         "term":"You have a cavity that needs to be filled.",
-         "definition":"Tiene una caries que necesita ser empastada."
+         "term":"I need to check your gums.",
+         "definition":"Necesito revisar sus encías."
       },
       {
-         "term":"We need to take an X-ray of your teeth.",
-         "definition":"Necesitamos tomar una radiografía de sus dientes."
+         "term":"I need to take your blood pressure.",
+         "definition":"Necesito tomar su presión arterial."
       },
       {
-         "term":"You should avoid eating hard or sticky foods.",
-         "definition":"Debe evitar comer alimentos duros o pegajosos."
+         "term":"I will clean your teeth now.",
+         "definition":"Voy a limpiar sus dientes ahora."
       },
       {
-         "term":"Your gums are inflamed and may require treatment.",
-         "definition":"Sus encías están inflamadas y pueden requerir tratamiento."
+         "term":"I will give you a local anesthetic.",
+         "definition":"Le daré un anestésico local."
+      },
+      {
+         "term":"I will prescribe antibiotics.",
+         "definition":"Le recetaré antibióticos."
+      },
+      {
+         "term":"I will use a numbing gel.",
+         "definition":"Usaré un gel anestésico."
+      },
+      {
+         "term":"Let me adjust your bite.",
+         "definition":"Déjame ajustar su mordida."
+      },
+      {
+         "term":"Let me check your tooth.",
+         "definition":"Déjame revisar su diente."
+      },
+      {
+         "term":"Open your mouth, please.",
+         "definition":"Abra la boca, por favor."
+      },
+      {
+         "term":"Please avoid eating hard foods.",
+         "definition":"Por favor, evite comer alimentos duros."
+      },
+      {
+         "term":"Please rinse your mouth.",
+         "definition":"Por favor, enjuague su boca."
+      },
+      {
+         "term":"Please sit back and relax.",
+         "definition":"Por favor, siéntese y relájese."
+      },
+      {
+         "term":"Rinse and spit, please.",
+         "definition":"Enjuague y escupa, por favor."
+      },
+      {
+         "term":"Take this medication as directed.",
+         "definition":"Tome este medicamento según las indicaciones."
+      },
+      {
+         "term":"The anesthesia will wear off soon.",
+         "definition":"La anestesia desaparecerá pronto."
+      },
+      {
+         "term":"The bleeding will stop soon.",
+         "definition":"El sangrado se detendrá pronto."
+      },
+      {
+         "term":"The cavity needs to be filled.",
+         "definition":"La caries necesita ser rellenada."
+      },
+      {
+         "term":"The filling is complete.",
+         "definition":"El relleno está completo."
+      },
+      {
+         "term":"The gum is infected.",
+         "definition":"La encía está infectada."
+      },
+      {
+         "term":"The pain should subside soon.",
+         "definition":"El dolor debería disminuir pronto."
+      },
+      {
+         "term":"This might cause some discomfort.",
+         "definition":"Esto puede causar alguna molestia."
+      },
+      {
+         "term":"Try to avoid sweets and sugary drinks.",
+         "definition":"Trate de evitar dulces y bebidas azucaradas."
+      },
+      {
+         "term":"We are done for today.",
+         "definition":"Hemos terminado por hoy."
+      },
+      {
+         "term":"We need to do a root canal.",
+         "definition":"Necesitamos hacer una endodoncia."
+      },
+      {
+         "term":"We need to extract this tooth.",
+         "definition":"Necesitamos extraer este diente."
+      },
+      {
+         "term":"We will check your bite alignment.",
+         "definition":"Revisaremos la alineación de su mordida."
+      },
+      {
+         "term":"We will monitor your progress.",
+         "definition":"Monitorearemos su progreso."
+      },
+      {
+         "term":"We will take care of you.",
+         "definition":"Nos encargaremos de usted."
+      },
+      {
+         "term":"You are doing great.",
+         "definition":"Lo está haciendo muy bien."
+      },
+      {
+         "term":"You can close your mouth now.",
+         "definition":"Puede cerrar la boca ahora."
+      },
+      {
+         "term":"You can sit up now.",
+         "definition":"Puede sentarse ahora."
+      },
+      {
+         "term":"You did an excellent job.",
+         "definition":"Hizo un excelente trabajo."
+      },
+      {
+         "term":"You have a cavity.",
+         "definition":"Tiene una caries."
+      },
+      {
+         "term":"You need a crown.",
+         "definition":"Necesita una corona."
+      },
+      {
+         "term":"You need a filling.",
+         "definition":"Necesita un relleno."
+      },
+      {
+         "term":"You need to floss daily.",
+         "definition":"Necesita usar hilo dental diariamente."
+      },
+      {
+         "term":"You need to wear braces.",
+         "definition":"Necesita usar brackets."
+      },
+      {
+         "term":"Are you allergic to any medications?",
+         "definition":"¿Es alérgico a algún medicamento?"
+      },
+      {
+         "term":"Are you experiencing sensitivity?",
+         "definition":"¿Está experimentando sensibilidad?"
+      },
+      {
+         "term":"Are your teeth hurting?",
+         "definition":"¿Le duelen los dientes?"
+      },
+      {
+         "term":"Do you need a prescription?",
+         "definition":"¿Necesita una receta?"
+      },
+      {
+         "term":"Do you smoke?",
+         "definition":"¿Fuma?"
+      },
+      {
+         "term":"Do you use mouthwash?",
+         "definition":"¿Usa enjuague bucal?"
+      },
+      {
+         "term":"Does it hurt when you drink cold water?",
+         "definition":"¿Le duele cuando bebe agua fría?"
+      },
+      {
+         "term":"Does it hurt when you drink hot liquids?",
+         "definition":"¿Le duele cuando bebe líquidos calientes?"
+      },
+      {
+         "term":"Does it hurt when you eat sweets?",
+         "definition":"¿Le duele cuando come dulces?"
+      },
+      {
+         "term":"Does your jaw hurt?",
+         "definition":"¿Le duele la mandíbula?"
+      },
+      {
+         "term":"How often do you brush your teeth?",
+         "definition":"¿Con qué frecuencia se cepilla los dientes?"
+      },
+      {
+         "term":"How often do you visit the dentist?",
+         "definition":"¿Con qué frecuencia visita al dentista?"
+      },
+      {
+         "term":"I am going to apply fluoride.",
+         "definition":"Voy a aplicar flúor."
+      },
+      {
+         "term":"I am going to examine your teeth.",
+         "definition":"Voy a examinar sus dientes."
+      },
+      {
+         "term":"I am going to polish your teeth.",
+         "definition":"Voy a pulir sus dientes."
+      },
+      {
+         "term":"I need to numb the area.",
+         "definition":"Necesito adormecer el área."
+      },
+      {
+         "term":"I will apply a temporary filling.",
+         "definition":"Voy a aplicar un relleno temporal."
+      },
+      {
+         "term":"I will give you a prescription.",
+         "definition":"Le daré una receta."
+      },
+      {
+         "term":"I will take a mold of your teeth.",
+         "definition":"Voy a tomar una impresión de sus dientes."
+      },
+      {
+         "term":"Please bite down on the gauze.",
+         "definition":"Por favor, muerda la gasa."
+      },
+      {
+         "term":"Please close your mouth slowly.",
+         "definition":"Por favor, cierre la boca lentamente."
+      },
+      {
+         "term":"Please come back for a follow-up.",
+         "definition":"Por favor, vuelva para una revisión."
+      },
+      {
+         "term":"Please follow the aftercare instructions.",
+         "definition":"Por favor, siga las instrucciones de cuidado posterior."
+      },
+      {
+         "term":"Please let me know if you feel any pain.",
+         "definition":"Por favor, hágame saber si siente algún dolor."
       },
       {
          "term":"Please open your mouth wider.",
-         "definition":"Por favor, abra la boca más."
+         "definition":"Por favor, abra más la boca."
       },
       {
-         "term":"Bite down on this gauze.",
-         "definition":"Muerda esta gasa."
+         "term":"Please take a deep breath.",
+         "definition":"Por favor, respire profundamente."
       },
       {
-         "term":"Do you feel any pain when I press here?",
-         "definition":"¿Siente dolor cuando presiono aquí?"
+         "term":"Please tilt your head back.",
+         "definition":"Por favor, incline la cabeza hacia atrás."
       },
       {
-         "term":"We will apply a local anesthetic to numb the area.",
-         "definition":"Aplicaremos un anestésico local para adormecer la zona."
+         "term":"Please try to relax.",
+         "definition":"Por favor, trate de relajarse."
       },
       {
-         "term":"Your next appointment is scheduled for next week.",
-         "definition":"Su próxima cita está programada para la próxima semana."
+         "term":"The anesthesia will take effect soon.",
+         "definition":"La anestesia surtirá efecto pronto."
       },
       {
-         "term":"You need to come back in six months for a check-up.",
-         "definition":"Necesita regresar en seis meses para un chequeo."
+         "term":"The bleeding is normal.",
+         "definition":"El sangrado es normal."
+      },
+      {
+         "term":"The numbness will wear off in a few hours.",
+         "definition":"El adormecimiento desaparecerá en unas pocas horas."
+      },
+      {
+         "term":"There might be some swelling.",
+         "definition":"Podría haber algo de hinchazón."
+      },
+      {
+         "term":"This will help reduce the pain.",
+         "definition":"Esto ayudará a reducir el dolor."
+      },
+      {
+         "term":"Try to avoid touching the area.",
+         "definition":"Trate de evitar tocar el área."
+      },
+      {
+         "term":"We are going to take a panoramic X-ray.",
+         "definition":"Vamos a tomar una radiografía panorámica."
+      },
+      {
+         "term":"We need to replace this filling.",
+         "definition":"Necesitamos reemplazar este relleno."
+      },
+      {
+         "term":"We will give you a temporary crown.",
+         "definition":"Le daremos una corona temporal."
+      },
+      {
+         "term":"We will place the crown at your next visit.",
+         "definition":"Colocaremos la corona en su próxima visita."
+      },
+      {
+         "term":"You might feel a little pressure.",
+         "definition":"Podría sentir un poco de presión."
+      },
+      {
+         "term":"You need to follow a soft diet.",
+         "definition":"Necesita seguir una dieta blanda."
+      },
+      {
+         "term":"You need to take these antibiotics.",
+         "definition":"Necesita tomar estos antibióticos."
+      },
+      {
+         "term":"You need to take these painkillers.",
+         "definition":"Necesita tomar estos analgésicos."
       }
    ]
 }
