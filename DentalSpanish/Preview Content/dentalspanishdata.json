@@ -5,27 +5,135 @@
          "definition":"Diente"
       },
       {
-         "term":"Dentist",
-         "definition":"Dentista"
+         "term":"Teeth",
+         "definition":"Dientes"
+      },
+      {
+         "term":"Gums",
+         "definition":"Encías"
+      },
+      {
+         "term":"Cavity",
+         "definition":"Caries"
+      },
+      {
+         "term":"Filling",
+         "definition":"Empaste"
       },
       {
          "term":"Crown",
          "definition":"Corona"
       },
       {
+         "term":"Root Canal",
+         "definition":"Endodoncia"
+      },
+      {
+         "term":"Extraction",
+         "definition":"Extracción"
+      },
+      {
+         "term":"Braces",
+         "definition":"Frenos / Brackets"
+      },
+      {
+         "term":"Retainer",
+         "definition":"Retenedor"
+      },
+      {
+         "term":"Dentist",
+         "definition":"Dentista"
+      },
+      {
+         "term":"Dental Hygienist",
+         "definition":"Higienista dental"
+      },
+      {
          "term":"Dental Floss",
-         "definition":"Hilo Dental"
+         "definition":"Hilo dental"
       },
       {
          "term":"Toothbrush",
          "definition":"Cepillo de dientes"
       },
       {
-         "term":"Gums",
-         "definition":"Encias"
+         "term":"Toothpaste",
+         "definition":"Pasta de dientes"
+      },
+      {
+         "term":"Mouthwash",
+         "definition":"Enjuague bucal"
+      },
+      {
+         "term":"Plaque",
+         "definition":"Placa"
+      },
+      {
+         "term":"Tartar",
+         "definition":"Sarro"
+      },
+      {
+         "term":"Gingivitis",
+         "definition":"Gingivitis"
+      },
+      {
+         "term":"Periodontitis",
+         "definition":"Periodontitis"
+      },
+      {
+         "term":"Orthodontist",
+         "definition":"Ortodoncista"
+      },
+      {
+         "term":"Dental Implant",
+         "definition":"Implante dental"
+      },
+      {
+         "term":"Wisdom Teeth",
+         "definition":"Muelas del juicio"
+      },
+      {
+         "term":"Bite",
+         "definition":"Mordida"
+      },
+      {
+         "term":"Jaw",
+         "definition":"Mandíbula"
+      },
+      {
+         "term":"X-ray",
+         "definition":"Radiografía"
+      },
+      {
+         "term":"Fluoride",
+         "definition":"Flúor"
+      },
+      {
+         "term":"Scaling",
+         "definition":"Raspado"
+      },
+      {
+         "term":"Dentures",
+         "definition":"Dentadura postiza"
+      },
+      {
+         "term":"Sensitive Teeth",
+         "definition":"Dientes sensibles"
       }
    ],
    "phrasesDeck":[
+      {
+         "term":"This tooth will need a root canal and crown.",
+         "definition":"Este diente necesitará una endodoncia y una corona."
+      },
+      {
+         "term":"Is it sensitive to hot or cold?",
+         "definition":"¿Es sensible al calor o al frío?"
+      },
+      {
+         "term":"Do you have any pain or discomfort?",
+         "definition":"¿Tiene algún dolor o molestia?"
+      },
       {
          "term":"How long have you had this pain?",
          "definition":"¿Cuánto tiempo ha tenido este dolor?"
@@ -33,6 +141,14 @@
       {
          "term":"You need to brush and floss your teeth daily.",
          "definition":"Necesita cepillarse y usar hilo dental todos los días."
+      },
+      {
+         "term":"You have a cavity that needs to be filled.",
+         "definition":"Tiene una caries que necesita ser empastada."
+      },
+      {
+         "term":"We need to take an X-ray of your teeth.",
+         "definition":"Necesitamos tomar una radiografía de sus dientes."
       },
       {
          "term":"You should avoid eating hard or sticky foods.",
@@ -43,12 +159,28 @@
          "definition":"Sus encías están inflamadas y pueden requerir tratamiento."
       },
       {
+         "term":"Please open your mouth wider.",
+         "definition":"Por favor, abra la boca más."
+      },
+      {
          "term":"Bite down on this gauze.",
          "definition":"Muerda esta gasa."
       },
       {
-         "term":"We need to take an X-ray of your teeth.",
-         "definition":"Necesitamos tomar una radiografía de sus dientes."
+         "term":"Do you feel any pain when I press here?",
+         "definition":"¿Siente dolor cuando presiono aquí?"
+      },
+      {
+         "term":"We will apply a local anesthetic to numb the area.",
+         "definition":"Aplicaremos un anestésico local para adormecer la zona."
+      },
+      {
+         "term":"Your next appointment is scheduled for next week.",
+         "definition":"Su próxima cita está programada para la próxima semana."
+      },
+      {
+         "term":"You need to come back in six months for a check-up.",
+         "definition":"Necesita regresar en seis meses para un chequeo."
       }
    ]
 }
