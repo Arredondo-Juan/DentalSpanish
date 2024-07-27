@@ -19,7 +19,6 @@
 		DC140B6D2C53340D00B47616 /* FlashcardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC140B6C2C53340D00B47616 /* FlashcardViewModel.swift */; };
 		DC140B6F2C53369E00B47616 /* FlashcardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC140B6E2C53369E00B47616 /* FlashcardListView.swift */; };
 		DC56432F2C53D82A001A01A8 /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC56432E2C53D82A001A01A8 /* FlashcardView.swift */; };
-		DC5643312C53D9AD001A01A8 /* FlashcardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5643302C53D9AC001A01A8 /* FlashcardDetailView.swift */; };
 		DC5643332C5423EA001A01A8 /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5643322C5423EA001A01A8 /* DraggableCardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +36,6 @@
 		DC140B6C2C53340D00B47616 /* FlashcardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardViewModel.swift; sourceTree = "<group>"; };
 		DC140B6E2C53369E00B47616 /* FlashcardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardListView.swift; sourceTree = "<group>"; };
 		DC56432E2C53D82A001A01A8 /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
-		DC5643302C53D9AC001A01A8 /* FlashcardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardDetailView.swift; sourceTree = "<group>"; };
 		DC5643322C5423EA001A01A8 /* DraggableCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +111,6 @@
 				DC140B542C5331E300B47616 /* FlashcardDecksView.swift */,
 				DC140B6E2C53369E00B47616 /* FlashcardListView.swift */,
 				DC56432E2C53D82A001A01A8 /* FlashcardView.swift */,
-				DC5643302C53D9AC001A01A8 /* FlashcardDetailView.swift */,
 				DC5643322C5423EA001A01A8 /* DraggableCardView.swift */,
 				DC07EDB32C54A90700B74747 /* TermsListView.swift */,
 				DC07EDB52C54A98A00B74747 /* MainView.swift */,
@@ -195,7 +192,6 @@
 				DC5643332C5423EA001A01A8 /* DraggableCardView.swift in Sources */,
 				DC07EDB62C54A98A00B74747 /* MainView.swift in Sources */,
 				DC140B6D2C53340D00B47616 /* FlashcardViewModel.swift in Sources */,
-				DC5643312C53D9AD001A01A8 /* FlashcardDetailView.swift in Sources */,
 				DC140B692C53338200B47616 /* Flashcard.swift in Sources */,
 				DC56432F2C53D82A001A01A8 /* FlashcardView.swift in Sources */,
 				DC140B552C5331E300B47616 /* FlashcardDecksView.swift in Sources */,
