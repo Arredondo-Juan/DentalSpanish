@@ -18,6 +18,18 @@ struct FlashcardListView: View {
 
     var body: some View {
         VStack {
+            if deckType == .custom {
+                NavigationLink(destination: AddCustomFlashcardView()
+                    .environmentObject(viewModel)) {
+                    Text("Add Custom Flashcard")
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .padding()
+                }
+            }
+
             ZStack {
                 ForEach(Array(flashcards.enumerated()), id: \.element.id) { index, flashcard in
                     DraggableCardView(flashcards: $flashcards, flashcard: flashcard)
@@ -26,7 +38,7 @@ struct FlashcardListView: View {
                 }
             }
             .padding()
-            
+
             if !flashcards.isEmpty {
                 Text("Cards left: \(flashcards.count)")
                     .font(.subheadline)
@@ -42,19 +54,14 @@ struct FlashcardListView: View {
     private func loadFlashcards() {
         switch deckType {
         case .terms:
-            print("Loading terms deck")
             flashcards = viewModel.termsDeck
         case .phrases:
-            print("Loading phrases deck")
             flashcards = viewModel.phrasesDeck
         case .custom:
-            print("Loading custom deck")
             flashcards = viewModel.customDeck
         case .saved:
-            print("Loading saved deck")
             flashcards = viewModel.savedDeck
         }
-        print("Loaded flashcards: \(flashcards.count)")
     }
 }
 

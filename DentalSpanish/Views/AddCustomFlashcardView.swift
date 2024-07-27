@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddCustomFlashcardView: View {
     @EnvironmentObject var viewModel: FlashcardViewModel
+    @Environment(\.presentationMode) var presentationMode
     @State private var term: String = ""
     @State private var definition: String = ""
 
@@ -42,10 +43,9 @@ struct AddCustomFlashcardView: View {
         viewModel.addCustomFlashcard(newFlashcard)
         term = ""
         definition = ""
+        presentationMode.wrappedValue.dismiss()
     }
 }
-
-
 
 #Preview {
     AddCustomFlashcardView()
