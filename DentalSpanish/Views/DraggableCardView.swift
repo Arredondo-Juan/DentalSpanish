@@ -12,21 +12,24 @@ struct DraggableCardView: View {
     @Binding var flashcards: [Flashcard]
     var flashcard: Flashcard
     @State private var isFlipped = false
+    @EnvironmentObject var viewModel: FlashcardViewModel
 
     var body: some View {
         VStack {
             if isFlipped {
                 Text(flashcard.definition)
-                    .font(.subheadline)
+                    .font(.largeTitle)
+                    .multilineTextAlignment(.center)
                     .padding()
             } else {
                 Text(flashcard.term)
-                    .font(.headline)
+                    .font(.largeTitle)
+                    .multilineTextAlignment(.center)
                     .padding()
             }
         }
-        .frame(width: 300, height: 180)
-        .background(Color.blue)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.white)
         .cornerRadius(10)
         .shadow(radius: 5)
         .padding()
@@ -43,7 +46,11 @@ struct DraggableCardView: View {
                     translation = value.translation
                 }
                 .onEnded { value in
-                    if abs(value.translation.width) > 100 {
+                    if value.translation.width < -100 {
+                        withAnimation {
+                            saveCard()
+                        }
+                    } else if value.translation.width > 100 {
                         withAnimation {
                             removeCard()
                         }
@@ -59,5 +66,9 @@ struct DraggableCardView: View {
     private func removeCard() {
         flashcards.removeAll { $0.id == flashcard.id }
     }
-}
 
+    private func saveCard() {
+        viewModel.saveFlashcard(flashcard)
+        removeCard()
+    }
+}

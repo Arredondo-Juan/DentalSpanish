@@ -16,23 +16,26 @@ struct ContentView: View {
                                endPoint: .bottomTrailing)
                 .ignoresSafeArea()
                 
+                ScrollView (showsIndicators: false) {
                     VStack(spacing: 30) {
-                        ForEach(DeckType.allCases, id: \.self) { deckType in
-                            NavigationLink(destination: FlashcardListView(deckType: deckType)) {
-                                Text(deckType.rawValue)
+                            ForEach(DeckType.allCases, id: \.self) { deckType in
+                                NavigationLink(destination: FlashcardListView(deckType: deckType)) {
+                                    Text(deckType.rawValue)
+                                }
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
+                                .foregroundStyle(Color.white)
+                                .frame(width: 300, height: 180)
+                                .background(RoundedRectangle(cornerRadius: 15)
+                                    .fill(Color.blue)
+                                    .shadow(radius: 5, y: 5)
+                                    .opacity(0.6))
                             }
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .foregroundStyle(Color.white)
-                            .frame(width: 300, height: 180)
-                            .background(RoundedRectangle(cornerRadius: 15)
-                                .fill(Color.blue)
-                                .shadow(radius: 5, y: 5)
-                                .opacity(0.6))
                         }
-                    }
-                    .navigationTitle("Home")
+                        .navigationTitle("Home")
                     .navigationBarTitleDisplayMode(.large)
+                    .padding()
+                }
             }
         }
     }

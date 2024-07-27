@@ -10,23 +10,28 @@ import SwiftUI
 struct FlashcardListView: View {
     @EnvironmentObject var viewModel: FlashcardViewModel
     var deckType: DeckType
-    @State private var flashcards: [Flashcard]
+    @State private var flashcards: [Flashcard] = []
 
     init(deckType: DeckType) {
         self.deckType = deckType
-        _flashcards = State(initialValue: [])
     }
 
     var body: some View {
-        ZStack {
-            ForEach(flashcards) { flashcard in
-                DraggableCardView(flashcards: $flashcards, flashcard: flashcard)
+        VStack {
+            ZStack {
+                ForEach(Array(flashcards.enumerated()), id: \.element.id) { index, flashcard in
+                    DraggableCardView(flashcards: $flashcards, flashcard: flashcard)
+                        .offset(x: CGFloat(index) * 5, y: CGFloat(index) * 5)
+                        .scaleEffect(1 - CGFloat(index) * 0.02)
+                }
             }
-            .font(.largeTitle)
-            .fontWeight(.bold)
-            .foregroundStyle(Color.white)
-            .frame(width: 300, height: 180)
-                .shadow(radius: 5, y: 5)
+            .padding()
+            
+            if !flashcards.isEmpty {
+                Text("Cards left: \(flashcards.count)")
+                    .font(.subheadline)
+                    .padding(.top)
+            }
         }
         .onAppear {
             loadFlashcards()
@@ -37,14 +42,22 @@ struct FlashcardListView: View {
     private func loadFlashcards() {
         switch deckType {
         case .terms:
+            print("Loading terms deck")
             flashcards = viewModel.termsDeck
         case .phrases:
+            print("Loading phrases deck")
             flashcards = viewModel.phrasesDeck
         case .custom:
+            print("Loading custom deck")
             flashcards = viewModel.customDeck
+        case .saved:
+            print("Loading saved deck")
+            flashcards = viewModel.savedDeck
         }
+        print("Loaded flashcards: \(flashcards.count)")
     }
 }
+
 
 #Preview {
     FlashcardListView(deckType: .terms)

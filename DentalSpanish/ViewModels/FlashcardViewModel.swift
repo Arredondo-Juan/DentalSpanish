@@ -6,32 +6,37 @@
 //
 
 import SwiftUI
-import Combine
 
 class FlashcardViewModel: ObservableObject {
     @Published var termsDeck: [Flashcard] = []
     @Published var phrasesDeck: [Flashcard] = []
     @Published var customDeck: [Flashcard] = []
+    @Published var savedDeck: [Flashcard] = []
 
     init() {
-        loadDecks()
+        loadFlashcards()
     }
 
-    func loadDecks() {
-        termsDeck = [
-            Flashcard(term: "Crown", definition: "Corona"),
-            Flashcard(term: "Gums", definition: "Encias")
-        ]
-        phrasesDeck = [
-            Flashcard(term: "Bite down on this gauze.", definition: "Muerda esta gasa."),
-            Flashcard(term: "Do you feel any pain when I press here?", definition: "¿Siente dolor cuando presiono aqui?")
-        ]
+    func loadFlashcards() {
+        if let url = Bundle.main.url(forResource: "dentalspanishdata", withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: url)
+                let flashcardData = try JSONDecoder().decode(FlashcardData.self, from: data)
+                termsDeck = flashcardData.termsDeck
+                phrasesDeck = flashcardData.phrasesDeck
+            } catch {
+                print("Error loading flashcards: \(error)")
+            }
+        }
     }
 
-    func addCustomFlashcard(term: String, definition: String) {
-        let newFlashcard = Flashcard(term: term, definition: definition)
-        customDeck.append(newFlashcard)
-        // Save to persistent storage if needed
+    func saveFlashcard(_ flashcard: Flashcard) {
+        if !savedDeck.contains(flashcard) {
+            savedDeck.append(flashcard)
+        }
+    }
+
+    func addCustomFlashcard(_ flashcard: Flashcard) {
+        customDeck.append(flashcard)
     }
 }
-

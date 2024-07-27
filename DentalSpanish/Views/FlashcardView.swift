@@ -24,7 +24,7 @@ struct FlashcardView: View {
             }
         }
         .frame(width: 300, height: 200)
-        .background(Color.white)
+        .background(Color.blue)
         .cornerRadius(15)
         .shadow(radius: 5, y: 5)
         .padding()

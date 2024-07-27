@@ -10,5 +10,6 @@ import Foundation
 enum DeckType: String, CaseIterable {
     case terms = "Terms"
     case phrases = "Phrases"
-    case custom = "Custom"
+    case saved = "Saved"
+    case custom = "Custom Deck"
 }

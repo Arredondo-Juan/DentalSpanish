@@ -13,11 +13,9 @@ struct FlashcardDetailView: View {
     var body: some View {
         VStack {
             Text(flashcard.term)
-                .font(.largeTitle)
                 .padding()
             
             Text(flashcard.definition)
-                .font(.body)
                 .padding()
             
             Spacer()

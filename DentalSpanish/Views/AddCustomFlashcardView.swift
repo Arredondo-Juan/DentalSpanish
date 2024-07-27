@@ -8,21 +8,43 @@
 import SwiftUI
 
 struct AddCustomFlashcardView: View {
-    @EnvironmentObject var viewModel: FlashcardViewModel // Inject the EnvironmentObject here
-    @State private var term = ""
-    @State private var definition = ""
+    @EnvironmentObject var viewModel: FlashcardViewModel
+    @State private var term: String = ""
+    @State private var definition: String = ""
 
     var body: some View {
-        Form {
+        VStack {
             TextField("Term", text: $term)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+
             TextField("Definition", text: $definition)
-            Button("Add Flashcard") {
-                viewModel.addCustomFlashcard(term: term, definition: definition)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+
+            Button(action: addFlashcard) {
+                Text("Add Flashcard")
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(10)
             }
+            .padding()
+
+            Spacer()
         }
         .navigationTitle("Add Custom Flashcard")
+        .padding()
+    }
+
+    private func addFlashcard() {
+        let newFlashcard = Flashcard(term: term, definition: definition)
+        viewModel.addCustomFlashcard(newFlashcard)
+        term = ""
+        definition = ""
     }
 }
+
 
 
 #Preview {

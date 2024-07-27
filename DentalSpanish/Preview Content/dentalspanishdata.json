@@ -1,0 +1,54 @@
+{
+   "termsDeck":[
+      {
+         "term":"Tooth",
+         "definition":"Diente"
+      },
+      {
+         "term":"Dentist",
+         "definition":"Dentista"
+      },
+      {
+         "term":"Crown",
+         "definition":"Corona"
+      },
+      {
+         "term":"Dental Floss",
+         "definition":"Hilo Dental"
+      },
+      {
+         "term":"Toothbrush",
+         "definition":"Cepillo de dientes"
+      },
+      {
+         "term":"Gums",
+         "definition":"Encias"
+      }
+   ],
+   "phrasesDeck":[
+      {
+         "term":"How long have you had this pain?",
+         "definition":"¿Cuánto tiempo ha tenido este dolor?"
+      },
+      {
+         "term":"You need to brush and floss your teeth daily.",
+         "definition":"Necesita cepillarse y usar hilo dental todos los días."
+      },
+      {
+         "term":"You should avoid eating hard or sticky foods.",
+         "definition":"Debe evitar comer alimentos duros o pegajosos."
+      },
+      {
+         "term":"Your gums are inflamed and may require treatment.",
+         "definition":"Sus encías están inflamadas y pueden requerir tratamiento."
+      },
+      {
+         "term":"Bite down on this gauze.",
+         "definition":"Muerda esta gasa."
+      },
+      {
+         "term":"We need to take an X-ray of your teeth.",
+         "definition":"Necesitamos tomar una radiografía de sus dientes."
+      }
+   ]
+}
