@@ -10,32 +10,48 @@ import SwiftUI
 struct TermsListView: View {
     @EnvironmentObject var viewModel: FlashcardViewModel
     @State private var searchText = ""
-    
+
+    var filteredTerms: [Flashcard] {
+        viewModel.termsDeck
+            .filter { $0.term.contains(searchText) || searchText.isEmpty }
+            .sorted { $0.term.localizedCompare($1.term) == .orderedAscending }
+    }
+
+    var filteredPhrases: [Flashcard] {
+        viewModel.phrasesDeck
+            .filter { $0.term.contains(searchText) || searchText.isEmpty }
+            .sorted { $0.term.localizedCompare($1.term) == .orderedAscending }
+    }
+
     var body: some View {
         NavigationView {
             List {
-                ForEach(filteredTermsAndPhrases, id: \.id) { item in
-                    VStack(alignment: .leading) {
-                        Text(item.term)
-                            .font(.headline)
-                        Text(item.definition)
-                            .font(.subheadline)
-                            .foregroundColor(.gray)
+                Section(header: Text("Terms")) {
+                    ForEach(filteredTerms) { flashcard in
+                        VStack(alignment: .leading) {
+                            Text(flashcard.term)
+                                .font(.headline)
+                            Text(flashcard.definition)
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                        }
                     }
-                    .padding()
+                }
+
+                Section(header: Text("Phrases")) {
+                    ForEach(filteredPhrases) { flashcard in
+                        VStack(alignment: .leading) {
+                            Text(flashcard.term)
+                                .font(.headline)
+                            Text(flashcard.definition)
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                        }
+                    }
                 }
             }
-            .searchable(text: $searchText)
             .navigationTitle("Terms & Phrases")
-        }
-    }
-    
-    private var filteredTermsAndPhrases: [Flashcard] {
-        let allItems = viewModel.termsDeck + viewModel.phrasesDeck
-        if searchText.isEmpty {
-            return allItems
-        } else {
-            return allItems.filter { $0.term.lowercased().contains(searchText.lowercased()) }
+            .searchable(text: $searchText)
         }
     }
 }

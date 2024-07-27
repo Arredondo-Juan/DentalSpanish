@@ -26,7 +26,7 @@ struct FlashcardView: View {
         .frame(width: 300, height: 200)
         .background(Color.blue)
         .cornerRadius(15)
-        .shadow(radius: 5, y: 1)
+        .shadow(radius: 5, y: 0.1)
         .padding()
         .onTapGesture {
             withAnimation {
