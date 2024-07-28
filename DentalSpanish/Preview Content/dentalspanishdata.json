@@ -1,60 +1,156 @@
 {
    "termsDeck":[
       {
-         "term":"Zygomatic bone",
-         "definition":"Hueso cigomático"
+         "term":"Abscess",
+         "definition":"Absceso"
       },
       {
-         "term":"Wisdom tooth",
-         "definition":"Muela del juicio"
+         "term":"Amalgam",
+         "definition":"Amalgama"
       },
       {
-         "term":"Whitening",
-         "definition":"Blanqueamiento"
+         "term":"Anesthesia",
+         "definition":"Anestesia"
       },
       {
-         "term":"Veneer",
-         "definition":"Carilla"
+         "term":"Antibiotic",
+         "definition":"Antibiótico"
       },
       {
-         "term":"Ulcer",
-         "definition":"Úlcera"
+         "term":"Apex",
+         "definition":"Ápice"
       },
       {
-         "term":"Torus",
-         "definition":"Torus"
+         "term":"Bite",
+         "definition":"Mordida"
       },
       {
-         "term":"TMJ (Temporomandibular Joint)",
-         "definition":"ATM (Articulación temporomandibular)"
+         "term":"Bitewing",
+         "definition":"Ala de mordida"
       },
       {
-         "term":"Toothpaste",
-         "definition":"Pasta de dientes"
+         "term":"Braces",
+         "definition":"Frenos"
       },
       {
-         "term":"Tooth",
-         "definition":"Diente"
+         "term":"Bridge",
+         "definition":"Puente"
       },
       {
-         "term":"Toothbrush",
-         "definition":"Cepillo de dientes"
+         "term":"Bruxism",
+         "definition":"Bruxismo"
       },
       {
-         "term":"Toothache",
-         "definition":"Dolor de muelas"
+         "term":"Cavity",
+         "definition":"Cavidad"
       },
       {
-         "term":"Tongue",
-         "definition":"Lengua"
+         "term":"Cement",
+         "definition":"Cemento"
       },
       {
-         "term":"Stain",
-         "definition":"Mancha"
+         "term":"Crown",
+         "definition":"Corona"
       },
       {
-         "term":"Saliva",
-         "definition":"Saliva"
+         "term":"Decay",
+         "definition":"Caries"
+      },
+      {
+         "term":"Dentin",
+         "definition":"Dentina"
+      },
+      {
+         "term":"Dentist",
+         "definition":"Dentista"
+      },
+      {
+         "term":"Denture",
+         "definition":"Dentadura"
+      },
+      {
+         "term":"Enamel",
+         "definition":"Esmalte"
+      },
+      {
+         "term":"Extraction",
+         "definition":"Extracción"
+      },
+      {
+         "term":"Filling",
+         "definition":"Empaste"
+      },
+      {
+         "term":"Floss",
+         "definition":"Hilo dental"
+      },
+      {
+         "term":"Fluoride",
+         "definition":"Flúor"
+      },
+      {
+         "term":"Gingivitis",
+         "definition":"Gingivitis"
+      },
+      {
+         "term":"Implant",
+         "definition":"Implante"
+      },
+      {
+         "term":"Inlay",
+         "definition":"Incrustación"
+      },
+      {
+         "term":"Laser",
+         "definition":"Láser"
+      },
+      {
+         "term":"Molar",
+         "definition":"Molar"
+      },
+      {
+         "term":"Nerve",
+         "definition":"Nervio"
+      },
+      {
+         "term":"Occlusion",
+         "definition":"Oclusión"
+      },
+      {
+         "term":"Orthodontist",
+         "definition":"Ortodontista"
+      },
+      {
+         "term":"Palate",
+         "definition":"Paladar"
+      },
+      {
+         "term":"Pediatric dentist",
+         "definition":"Dentista pediátrico"
+      },
+      {
+         "term":"Periodontist",
+         "definition":"Periodoncista"
+      },
+      {
+         "term":"Plaque",
+         "definition":"Placa"
+      },
+      {
+         "term":"Prophylaxis",
+         "definition":"Profilaxis"
+      },
+      {
+         "term":"Prosthesis",
+         "definition":"Prótesis"
+      },
+      {
+         "term":"Pulp",
+         "definition":"Pulpa"
+      },
+      {
+         "term":"Radiograph",
+         "definition":"Radiografía"
       },
       {
          "term":"Retainer",
@@ -62,845 +158,769 @@
       },
       {
          "term":"Root canal",
-         "definition":"Tratamiento de conducto"
+         "definition":"Canal radicular"
       },
       {
-         "term":"Receding gums",
-         "definition":"Encías retraídas"
+         "term":"Scaling",
+         "definition":"Raspado"
       },
       {
-         "term":"Radiograph",
+         "term":"Sealant",
+         "definition":"Sellador"
+      },
+      {
+         "term":"Sedation",
+         "definition":"Sedación"
+      },
+      {
+         "term":"Sensitivity",
+         "definition":"Sensibilidad"
+      },
+      {
+         "term":"Tartar",
+         "definition":"Sarro"
+      },
+      {
+         "term":"Temporary crown",
+         "definition":"Corona temporal"
+      },
+      {
+         "term":"Toothbrush",
+         "definition":"Cepillo de dientes"
+      },
+      {
+         "term":"Toothpaste",
+         "definition":"Pasta de dientes"
+      },
+      {
+         "term":"Veneer",
+         "definition":"Carilla"
+      },
+      {
+         "term":"Wisdom tooth",
+         "definition":"Muela del juicio"
+      },
+      {
+         "term":"X-ray",
          "definition":"Radiografía"
       },
       {
-         "term":"Plaque",
-         "definition":"Placa"
+         "term":"Absorbent point",
+         "definition":"Punta absorbente"
       },
       {
-         "term":"Periodontitis",
-         "definition":"Periodontitis"
-      },
-      {
-         "term":"Periodontal disease",
-         "definition":"Enfermedad periodontal"
-      },
-      {
-         "term":"Palate",
-         "definition":"Paladar"
-      },
-      {
-         "term":"Overbite",
-         "definition":"Mordida profunda"
-      },
-      {
-         "term":"Oral hygiene",
-         "definition":"Higiene oral"
-      },
-      {
-         "term":"Occlusion",
-         "definition":"Oclusión"
-      },
-      {
-         "term":"Mouthguard",
-         "definition":"Protector bucal"
-      },
-      {
-         "term":"Mouthwash",
-         "definition":"Enjuague bucal"
-      },
-      {
-         "term":"Mouth",
-         "definition":"Boca"
-      },
-      {
-         "term":"Molars",
-         "definition":"Molares"
-      },
-      {
-         "term":"Molar",
-         "definition":"Molar"
-      },
-      {
-         "term":"Mandible",
-         "definition":"Mandíbula"
-      },
-      {
-         "term":"Malocclusion",
-         "definition":"Mala oclusión"
-      },
-      {
-         "term":"Lower jaw",
-         "definition":"Mandíbula inferior"
-      },
-      {
-         "term":"Lingual",
-         "definition":"Lingual"
-      },
-      {
-         "term":"Lip",
-         "definition":"Labio"
-      },
-      {
-         "term":"Lesion",
-         "definition":"Lesión"
-      },
-      {
-         "term":"Incisors",
-         "definition":"Incisivos"
-      },
-      {
-         "term":"Impacted tooth",
-         "definition":"Diente impactado"
-      },
-      {
-         "term":"Implant",
-         "definition":"Implante"
-      },
-      {
-         "term":"Hypertrophy",
-         "definition":"Hipertrofia"
-      },
-      {
-         "term":"Hypoplasia",
-         "definition":"Hipoplasia"
-      },
-      {
-         "term":"Hyperplasia",
-         "definition":"Hiperplasia"
-      },
-      {
-         "term":"Hypercementosis",
-         "definition":"Hipercementosis"
-      },
-      {
-         "term":"Hypersensitivity",
-         "definition":"Hipersensibilidad"
-      },
-      {
-         "term":"Hypodontia",
-         "definition":"Hipodoncia"
-      },
-      {
-         "term":"Hypocalcification",
-         "definition":"Hipocalcificación"
-      },
-      {
-         "term":"Hyperdontia",
-         "definition":"Hiperodoncia"
-      },
-      {
-         "term":"Hyperemia",
-         "definition":"Hiperemia"
-      },
-      {
-         "term":"Gum",
-         "definition":"Encía"
-      },
-      {
-         "term":"Gum disease",
-         "definition":"Enfermedad de las encías"
-      },
-      {
-         "term":"Grinding",
-         "definition":"Bruxismo"
-      },
-      {
-         "term":"Gingivitis",
-         "definition":"Gingivitis"
-      },
-      {
-         "term":"Gingival sulcus",
-         "definition":"Surco gingival"
-      },
-      {
-         "term":"Fluoride",
-         "definition":"Flúor"
-      },
-      {
-         "term":"Floss",
-         "definition":"Hilo dental"
-      },
-      {
-         "term":"Filling",
-         "definition":"Empaste"
-      },
-      {
-         "term":"Fissure sealant",
-         "definition":"Sellador de fisuras"
-      },
-      {
-         "term":"Excision",
-         "definition":"Escisión"
-      },
-      {
-         "term":"Extraction",
-         "definition":"Extracción"
-      },
-      {
-         "term":"Eruption",
-         "definition":"Erupción"
-      },
-      {
-         "term":"Endodontics",
-         "definition":"Endodoncia"
-      },
-      {
-         "term":"Enamel",
-         "definition":"Esmalte"
-      },
-      {
-         "term":"Emergency",
-         "definition":"Emergencia"
-      },
-      {
-         "term":"Dentist",
-         "definition":"Dentista"
-      },
-      {
-         "term":"Dentin",
-         "definition":"Dentina"
-      },
-      {
-         "term":"Dentistry",
-         "definition":"Odontología"
-      },
-      {
-         "term":"Dentures",
-         "definition":"Dentaduras"
-      },
-      {
-         "term":"Decay",
-         "definition":"Caries"
-      },
-      {
-         "term":"Debridement",
-         "definition":"Desbridamiento"
-      },
-      {
-         "term":"Cusp",
-         "definition":"Cúspide"
-      },
-      {
-         "term":"Crown",
-         "definition":"Corona"
-      },
-      {
-         "term":"Cracked tooth",
-         "definition":"Diente fisurado"
-      },
-      {
-         "term":"Craniofacial",
-         "definition":"Craneofacial"
-      },
-      {
-         "term":"Cosmetic dentistry",
-         "definition":"Odontología estética"
-      },
-      {
-         "term":"Cavity",
-         "definition":"Cavidad"
-      },
-      {
-         "term":"Caries",
-         "definition":"Caries"
-      },
-      {
-         "term":"Caries risk assessment",
-         "definition":"Evaluación de riesgo de caries"
-      },
-      {
-         "term":"Caries free",
-         "definition":"Libre de caries"
-      },
-      {
-         "term":"Caries activity test",
-         "definition":"Prueba de actividad de caries"
-      },
-      {
-         "term":"Canker sore",
-         "definition":"Afta"
-      },
-      {
-         "term":"Calculus",
-         "definition":"Cálculo"
-      },
-      {
-         "term":"Bruxism",
-         "definition":"Bruxismo"
-      },
-      {
-         "term":"Bridge",
-         "definition":"Puente"
-      },
-      {
-         "term":"Bite",
-         "definition":"Mordida"
-      },
-      {
-         "term":"Bicuspid",
-         "definition":"Bicúspide"
-      },
-      {
-         "term":"Bitewing",
-         "definition":"Radiografía de mordida"
-      },
-      {
-         "term":"Biopsy",
-         "definition":"Biopsia"
-      },
-      {
-         "term":"Bleeding",
-         "definition":"Sangrado"
-      },
-      {
-         "term":"Bite guard",
-         "definition":"Protector de mordida"
-      },
-      {
-         "term":"Biomaterial",
-         "definition":"Biomaterial"
-      },
-      {
-         "term":"Apicoectomy",
-         "definition":"Apicectomía"
-      },
-      {
-         "term":"Apex",
-         "definition":"Ápice"
+         "term":"Acrylic",
+         "definition":"Acrílico"
       },
       {
          "term":"Alveolar bone",
          "definition":"Hueso alveolar"
       },
       {
-         "term":"Abscess",
-         "definition":"Absceso"
+         "term":"Anterior teeth",
+         "definition":"Dientes anteriores"
       },
       {
-         "term":"Abutment",
-         "definition":"Pilar"
+         "term":"Bicuspid",
+         "definition":"Bicúspide"
       },
       {
-         "term":"Acid etching",
-         "definition":"Grabado ácido"
+         "term":"Biofilm",
+         "definition":"Biopelícula"
+      },
+      {
+         "term":"Bonding",
+         "definition":"Unión"
+      },
+      {
+         "term":"Calcium hydroxide",
+         "definition":"Hidróxido de calcio"
+      },
+      {
+         "term":"Canine",
+         "definition":"Canino"
+      },
+      {
+         "term":"Cervical",
+         "definition":"Cervical"
+      },
+      {
+         "term":"Cleft palate",
+         "definition":"Paladar hendido"
+      },
+      {
+         "term":"Composite",
+         "definition":"Composite"
+      },
+      {
+         "term":"Crown lengthening",
+         "definition":"Alargamiento de corona"
+      },
+      {
+         "term":"Dental arch",
+         "definition":"Arco dental"
+      },
+      {
+         "term":"Dental dam",
+         "definition":"Dique dental"
+      },
+      {
+         "term":"Dental floss",
+         "definition":"Hilo dental"
+      },
+      {
+         "term":"Dentifrice",
+         "definition":"Dentífrico"
+      },
+      {
+         "term":"Dry socket",
+         "definition":"Alveolitis seca"
+      },
+      {
+         "term":"Endodontics",
+         "definition":"Endodoncia"
+      },
+      {
+         "term":"Excision",
+         "definition":"Escisión"
+      },
+      {
+         "term":"Exostosis",
+         "definition":"Exostosis"
+      },
+      {
+         "term":"Fissure",
+         "definition":"Fisura"
+      },
+      {
+         "term":"Fistula",
+         "definition":"Fístula"
+      },
+      {
+         "term":"Fluorosis",
+         "definition":"Fluorosis"
+      },
+      {
+         "term":"Gingiva",
+         "definition":"Encía"
+      },
+      {
+         "term":"Hemorrhage",
+         "definition":"Hemorragia"
+      },
+      {
+         "term":"Hygienist",
+         "definition":"Higienista"
+      },
+      {
+         "term":"Impacted tooth",
+         "definition":"Diente impactado"
+      },
+      {
+         "term":"Incisor",
+         "definition":"Incisivo"
+      },
+      {
+         "term":"Infection",
+         "definition":"Infección"
+      },
+      {
+         "term":"Intravenous sedation",
+         "definition":"Sedación intravenosa"
+      },
+      {
+         "term":"Lateral incisor",
+         "definition":"Incisivo lateral"
+      },
+      {
+         "term":"Lingual",
+         "definition":"Lingual"
+      },
+      {
+         "term":"Local anesthesia",
+         "definition":"Anestesia local"
+      },
+      {
+         "term":"Mandible",
+         "definition":"Mandíbula"
+      },
+      {
+         "term":"Maxilla",
+         "definition":"Maxilar"
+      },
+      {
+         "term":"Mesial",
+         "definition":"Mesial"
+      },
+      {
+         "term":"Mouthguard",
+         "definition":"Protector bucal"
+      },
+      {
+         "term":"Occlusal surface",
+         "definition":"Superficie oclusal"
+      },
+      {
+         "term":"Oral surgery",
+         "definition":"Cirugía oral"
+      },
+      {
+         "term":"Orthodontics",
+         "definition":"Ortodoncia"
+      },
+      {
+         "term":"Periodontics",
+         "definition":"Periodoncia"
+      },
+      {
+         "term":"Periosteum",
+         "definition":"Periostio"
+      },
+      {
+         "term":"Post",
+         "definition":"Poste"
+      },
+      {
+         "term":"Primary teeth",
+         "definition":"Dientes primarios"
+      },
+      {
+         "term":"Prosthodontics",
+         "definition":"Prostodoncia"
+      },
+      {
+         "term":"Pulpitis",
+         "definition":"Pulpitis"
+      },
+      {
+         "term":"Quadrant",
+         "definition":"Cuadrante"
+      },
+      {
+         "term":"Radiograph",
+         "definition":"Radiografía"
+      },
+      {
+         "term":"Remineralization",
+         "definition":"Remineralización"
+      },
+      {
+         "term":"Root",
+         "definition":"Raíz"
+      },
+      {
+         "term":"Saliva",
+         "definition":"Saliva"
+      },
+      {
+         "term":"Scaling",
+         "definition":"Raspado"
+      },
+      {
+         "term":"Soft tissue",
+         "definition":"Tejido blando"
+      },
+      {
+         "term":"Space maintainer",
+         "definition":"Mantenedor de espacio"
+      },
+      {
+         "term":"Sterilization",
+         "definition":"Esterilización"
+      },
+      {
+         "term":"Temporomandibular joint",
+         "definition":"Articulación temporomandibular"
+      },
+      {
+         "term":"Tissue",
+         "definition":"Tejido"
+      },
+      {
+         "term":"Ultrasonic",
+         "definition":"Ultrasónico"
+      },
+      {
+         "term":"Unerupted tooth",
+         "definition":"Diente no erupcionado"
+      },
+      {
+         "term":"Varnish",
+         "definition":"Barniz"
+      },
+      {
+         "term":"Vitality",
+         "definition":"Vitalidad"
+      },
+      {
+         "term":"Whitening",
+         "definition":"Blanqueamiento"
+      },
+      {
+         "term":"Zirconia",
+         "definition":"Zirconia"
       }
    ],
    "phrasesDeck":[
       {
-         "term":"You will need a root canal.",
-         "definition":"Necesitará un tratamiento de conducto."
+         "term":"Do you have any pain?",
+         "definition":"¿Tienes algún dolor?"
       },
       {
-         "term":"Your gums are inflamed.",
-         "definition":"Sus encías están inflamadas."
-      },
-      {
-         "term":"You should use dental floss.",
-         "definition":"Debería usar hilo dental."
-      },
-      {
-         "term":"You need to brush your teeth twice a day.",
-         "definition":"Necesita cepillarse los dientes dos veces al día."
-      },
-      {
-         "term":"You need a dental crown.",
-         "definition":"Necesita una corona dental."
-      },
-      {
-         "term":"You have a tooth infection.",
-         "definition":"Tiene una infección dental."
-      },
-      {
-         "term":"You have a cavity.",
-         "definition":"Tiene una caries."
-      },
-      {
-         "term":"You have a broken tooth.",
-         "definition":"Tiene un diente roto."
-      },
-      {
-         "term":"You have a bone loss.",
-         "definition":"Tiene una pérdida ósea."
-      },
-      {
-         "term":"You have a bad bite.",
-         "definition":"Tiene una mala mordida."
-      },
-      {
-         "term":"You have an abscess.",
-         "definition":"Tiene un absceso."
+         "term":"Open your mouth, please.",
+         "definition":"Abre la boca, por favor."
       },
       {
          "term":"You need a filling.",
-         "definition":"Necesita un empaste."
+         "definition":"Necesitas un empaste."
       },
       {
-         "term":"Your tooth is loose.",
-         "definition":"Su diente está flojo."
+         "term":"We need to take an x-ray.",
+         "definition":"Necesitamos tomar una radiografía."
       },
       {
-         "term":"Your teeth are crowded.",
-         "definition":"Sus dientes están apiñados."
+         "term":"This may feel a bit cold.",
+         "definition":"Esto puede sentirse un poco frío."
       },
       {
-         "term":"Your teeth are discolored.",
-         "definition":"Sus dientes están descoloridos."
+         "term":"Bite down, please.",
+         "definition":"Muerde, por favor."
       },
       {
-         "term":"Your gums are healthy.",
-         "definition":"Sus encías están sanas."
+         "term":"You need a root canal.",
+         "definition":"Necesitas un tratamiento de conducto."
       },
       {
-         "term":"Your bite is off.",
-         "definition":"Su mordida está desajustada."
+         "term":"We need to clean your teeth.",
+         "definition":"Necesitamos limpiar tus dientes."
       },
       {
-         "term":"We will take an x-ray.",
-         "definition":"Tomaremos una radiografía."
+         "term":"Your gums are inflamed.",
+         "definition":"Tus encías están inflamadas."
       },
       {
-         "term":"We need to remove your wisdom teeth.",
-         "definition":"Necesitamos extraer sus muelas del juicio."
+         "term":"Do you floss regularly?",
+         "definition":"¿Usas hilo dental regularmente?"
+      },
+      {
+         "term":"Do you brush twice a day?",
+         "definition":"¿Te cepillas dos veces al día?"
+      },
+      {
+         "term":"Please rinse your mouth.",
+         "definition":"Por favor, enjuaga tu boca."
+      },
+      {
+         "term":"You have a cavity.",
+         "definition":"Tienes una caries."
+      },
+      {
+         "term":"We need to extract a tooth.",
+         "definition":"Necesitamos extraer un diente."
+      },
+      {
+         "term":"You have plaque buildup.",
+         "definition":"Tienes acumulación de placa."
+      },
+      {
+         "term":"We will apply a fluoride treatment.",
+         "definition":"Aplicaremos un tratamiento de flúor."
+      },
+      {
+         "term":"You need to see a specialist.",
+         "definition":"Necesitas ver a un especialista."
+      },
+      {
+         "term":"This is a temporary crown.",
+         "definition":"Esta es una corona temporal."
+      },
+      {
+         "term":"Your bite is not aligned.",
+         "definition":"Tu mordida no está alineada."
+      },
+      {
+         "term":"You have gingivitis.",
+         "definition":"Tienes gingivitis."
+      },
+      {
+         "term":"We need to replace your filling.",
+         "definition":"Necesitamos reemplazar tu empaste."
+      },
+      {
+         "term":"This is a local anesthetic.",
+         "definition":"Este es un anestésico local."
+      },
+      {
+         "term":"Do you have any allergies?",
+         "definition":"¿Tienes alguna alergia?"
+      },
+      {
+         "term":"We need to make a mold of your teeth.",
+         "definition":"Necesitamos hacer un molde de tus dientes."
+      },
+      {
+         "term":"You need braces.",
+         "definition":"Necesitas frenos."
+      },
+      {
+         "term":"We will polish your teeth.",
+         "definition":"Puliremos tus dientes."
+      },
+      {
+         "term":"Please close your mouth.",
+         "definition":"Por favor, cierra la boca."
+      },
+      {
+         "term":"Do you have dental insurance?",
+         "definition":"¿Tienes seguro dental?"
+      },
+      {
+         "term":"We need to schedule your next appointment.",
+         "definition":"Necesitamos programar tu próxima cita."
+      },
+      {
+         "term":"You have tartar buildup.",
+         "definition":"Tienes acumulación de sarro."
       },
       {
          "term":"We need to take an impression.",
          "definition":"Necesitamos tomar una impresión."
       },
       {
-         "term":"We need to do a biopsy.",
-         "definition":"Necesitamos hacer una biopsia."
+         "term":"You need to wear a night guard.",
+         "definition":"Necesitas usar un protector nocturno."
       },
       {
-         "term":"We need to clean your teeth.",
-         "definition":"Necesitamos limpiar sus dientes."
+         "term":"This is a deep cleaning.",
+         "definition":"Esta es una limpieza profunda."
       },
       {
-         "term":"We need to check your bite.",
-         "definition":"Necesitamos revisar su mordida."
+         "term":"Do you grind your teeth?",
+         "definition":"¿Rechinas los dientes?"
       },
       {
-         "term":"We need to adjust your braces.",
-         "definition":"Necesitamos ajustar sus frenos."
+         "term":"You need to avoid hard foods.",
+         "definition":"Necesitas evitar alimentos duros."
       },
       {
-         "term":"We need to apply fluoride.",
-         "definition":"Necesitamos aplicar flúor."
+         "term":"Your tooth is cracked.",
+         "definition":"Tu diente está agrietado."
       },
       {
-         "term":"We need to take a mold of your teeth.",
-         "definition":"Necesitamos tomar un molde de sus dientes."
+         "term":"You have a chipped tooth.",
+         "definition":"Tienes un diente astillado."
       },
       {
-         "term":"We need to monitor your gums.",
-         "definition":"Necesitamos monitorear sus encías."
+         "term":"This will help with sensitivity.",
+         "definition":"Esto ayudará con la sensibilidad."
       },
       {
-         "term":"We need to make a crown.",
-         "definition":"Necesitamos hacer una corona."
+         "term":"We need to repair your denture.",
+         "definition":"Necesitamos reparar tu dentadura."
       },
       {
-         "term":"We need to fill your cavity.",
-         "definition":"Necesitamos rellenar su caries."
+         "term":"Do you have any questions?",
+         "definition":"¿Tienes alguna pregunta?"
       },
       {
-         "term":"We need to examine your mouth.",
-         "definition":"Necesitamos examinar su boca."
+         "term":"You need to use a soft toothbrush.",
+         "definition":"Necesitas usar un cepillo de dientes suave."
       },
       {
-         "term":"We need to extract this tooth.",
-         "definition":"Necesitamos extraer este diente."
+         "term":"We will need to numb the area.",
+         "definition":"Necesitaremos adormecer el área."
       },
       {
-         "term":"We need to evaluate your teeth.",
-         "definition":"Necesitamos evaluar sus dientes."
+         "term":"This might cause some discomfort.",
+         "definition":"Esto puede causar alguna incomodidad."
       },
       {
-         "term":"We need to do a deep cleaning.",
-         "definition":"Necesitamos hacer una limpieza profunda."
+         "term":"You need a crown.",
+         "definition":"Necesitas una corona."
       },
       {
-         "term":"We need to check for decay.",
-         "definition":"Necesitamos revisar si hay caries."
+         "term":"We will remove the stitches in a week.",
+         "definition":"Quitaremos los puntos en una semana."
       },
       {
-         "term":"We need to apply sealants.",
-         "definition":"Necesitamos aplicar selladores."
+         "term":"Your teeth are in good condition.",
+         "definition":"Tus dientes están en buen estado."
       },
       {
-         "term":"We need to adjust your dentures.",
-         "definition":"Necesitamos ajustar sus dentaduras."
+         "term":"You need a dental check-up.",
+         "definition":"Necesitas un chequeo dental."
       },
       {
-         "term":"This is a temporary filling.",
-         "definition":"Este es un empaste temporal."
+         "term":"We need to see you in six months.",
+         "definition":"Necesitamos verte en seis meses."
       },
       {
-         "term":"This is a routine procedure.",
-         "definition":"Este es un procedimiento rutinario."
+         "term":"You need to avoid sugary foods.",
+         "definition":"Necesitas evitar alimentos azucarados."
       },
       {
          "term":"This is a preventive measure.",
          "definition":"Esta es una medida preventiva."
       },
       {
-         "term":"This is a permanent crown.",
-         "definition":"Esta es una corona permanente."
+         "term":"You need to use an antiseptic mouthwash.",
+         "definition":"Necesitas usar un enjuague bucal antiséptico."
       },
       {
-         "term":"This crown is temporary.",
-         "definition":"Esta corona es temporal."
+         "term":"We will give you a prescription.",
+         "definition":"Te daremos una receta."
       },
       {
-         "term":"There is decay in your tooth.",
-         "definition":"Hay caries en su diente."
+         "term":"This will protect your enamel.",
+         "definition":"Esto protegerá tu esmalte."
       },
       {
-         "term":"There is a crack in your tooth.",
-         "definition":"Hay una grieta en su diente."
+         "term":"You need a periodontal treatment.",
+         "definition":"Necesitas un tratamiento periodontal."
       },
       {
-         "term":"There is a cavity here.",
-         "definition":"Hay una caries aquí."
+         "term":"This is a routine procedure.",
+         "definition":"Este es un procedimiento rutinario."
       },
       {
-         "term":"There is a buildup of plaque.",
-         "definition":"Hay una acumulación de placa."
+         "term":"Your gums are receding.",
+         "definition":"Tus encías están retrocediendo."
       },
       {
-         "term":"There is a buildup of tartar.",
-         "definition":"Hay una acumulación de sarro."
+         "term":"You need a scaling and root planing.",
+         "definition":"Necesitas un raspado y alisado radicular."
       },
       {
-         "term":"There is a broken filling.",
-         "definition":"Hay un empaste roto."
+         "term":"Please let us know if you feel any pain.",
+         "definition":"Por favor, avísanos si sientes algún dolor."
       },
       {
-         "term":"The x-ray shows no issues.",
-         "definition":"La radiografía no muestra problemas."
+         "term":"We need to adjust your bite.",
+         "definition":"Necesitamos ajustar tu mordida."
       },
       {
-         "term":"The x-ray shows a cavity.",
-         "definition":"La radiografía muestra una caries."
+         "term":"Do you have a dental emergency?",
+         "definition":"¿Tienes una emergencia dental?"
       },
       {
-         "term":"The x-ray looks good.",
-         "definition":"La radiografía se ve bien."
+         "term":"You need to visit an orthodontist.",
+         "definition":"Necesitas visitar a un ortodoncista."
       },
       {
-         "term":"The tooth is infected.",
-         "definition":"El diente está infectado."
+         "term":"We will monitor your progress.",
+         "definition":"Monitorearemos tu progreso."
       },
       {
-         "term":"The root canal was successful.",
-         "definition":"El tratamiento de conducto fue exitoso."
+         "term":"Please follow the aftercare instructions.",
+         "definition":"Por favor, sigue las instrucciones de cuidado posterior."
       },
       {
-         "term":"The procedure is painless.",
-         "definition":"El procedimiento es indoloro."
+         "term":"We need to take another x-ray.",
+         "definition":"Necesitamos tomar otra radiografía."
       },
       {
-         "term":"The procedure is common.",
-         "definition":"El procedimiento es común."
+         "term":"Your tooth is impacted.",
+         "definition":"Tu diente está impactado."
       },
       {
-         "term":"The pain will go away soon.",
-         "definition":"El dolor desaparecerá pronto."
+         "term":"This is a resin-based filling.",
+         "definition":"Este es un empaste de resina."
       },
       {
-         "term":"The pain is due to inflammation.",
-         "definition":"El dolor se debe a la inflamación."
+         "term":"You need to replace your toothbrush regularly.",
+         "definition":"Necesitas reemplazar tu cepillo de dientes regularmente."
       },
       {
-         "term":"The pain is normal.",
-         "definition":"El dolor es normal."
+         "term":"You should avoid smoking.",
+         "definition":"Debes evitar fumar."
       },
       {
-         "term":"The infection is under control.",
-         "definition":"La infección está bajo control."
+         "term":"This procedure will take about an hour.",
+         "definition":"Este procedimiento tomará alrededor de una hora."
       },
       {
-         "term":"The infection has spread.",
-         "definition":"La infección se ha propagado."
+         "term":"We need to apply a sealant.",
+         "definition":"Necesitamos aplicar un sellador."
       },
       {
-         "term":"The gums are receding.",
-         "definition":"Las encías están retrocediendo."
+         "term":"Do you have any discomfort?",
+         "definition":"¿Tienes alguna incomodidad?"
       },
       {
-         "term":"The decay is extensive.",
-         "definition":"La caries es extensa."
+         "term":"We will use a dental dam.",
+         "definition":"Usaremos un dique dental."
       },
       {
-         "term":"The crown fits well.",
-         "definition":"La corona se ajusta bien."
+         "term":"Your tooth needs a post and core.",
+         "definition":"Tu diente necesita un poste y núcleo."
       },
       {
-         "term":"The crown feels loose.",
-         "definition":"La corona se siente floja."
+         "term":"This will help prevent decay.",
+         "definition":"Esto ayudará a prevenir caries."
       },
       {
-         "term":"The crown is broken.",
-         "definition":"La corona está rota."
+         "term":"You have a dry socket.",
+         "definition":"Tienes una alveolitis seca."
       },
       {
-         "term":"The cavity is deep.",
-         "definition":"La caries es profunda."
+         "term":"We need to place a temporary filling.",
+         "definition":"Necesitamos colocar un empaste temporal."
       },
       {
-         "term":"The cavity is shallow.",
-         "definition":"La caries es superficial."
+         "term":"You need to avoid eating for an hour.",
+         "definition":"Necesitas evitar comer durante una hora."
       },
       {
-         "term":"The cavity is large.",
-         "definition":"La caries es grande."
+         "term":"This is a permanent filling.",
+         "definition":"Este es un empaste permanente."
       },
       {
-         "term":"The cavity is small.",
-         "definition":"La caries es pequeña."
+         "term":"We will place a crown on this tooth.",
+         "definition":"Colocaremos una corona en este diente."
       },
       {
-         "term":"The braces need adjustment.",
-         "definition":"Los frenos necesitan ajuste."
+         "term":"You need to visit a periodontist.",
+         "definition":"Necesitas visitar a un periodoncista."
       },
       {
-         "term":"The braces are too tight.",
-         "definition":"Los frenos están demasiado apretados."
+         "term":"We need to take a panoramic x-ray.",
+         "definition":"Necesitamos tomar una radiografía panorámica."
       },
       {
-         "term":"The braces are loose.",
-         "definition":"Los frenos están flojos."
+         "term":"Your tooth is infected.",
+         "definition":"Tu diente está infectado."
       },
       {
-         "term":"The appointment is scheduled.",
-         "definition":"La cita está programada."
+         "term":"We need to drain the abscess.",
+         "definition":"Necesitamos drenar el absceso."
       },
       {
-         "term":"Take this prescription.",
-         "definition":"Tome esta prescripción."
+         "term":"Do you have any medical conditions?",
+         "definition":"¿Tienes alguna condición médica?"
       },
       {
-         "term":"Stop using tobacco.",
-         "definition":"Deje de usar tabaco."
+         "term":"We need to apply a varnish.",
+         "definition":"Necesitamos aplicar un barniz."
       },
       {
-         "term":"Stop grinding your teeth.",
-         "definition":"Deje de rechinar los dientes."
+         "term":"This will protect your gums.",
+         "definition":"Esto protegerá tus encías."
       },
       {
-         "term":"Stop eating hard foods.",
-         "definition":"Deje de comer alimentos duros."
+         "term":"You need to visit us for a follow-up.",
+         "definition":"Necesitas visitarnos para un seguimiento."
       },
       {
-         "term":"Stop eating sugary foods.",
-         "definition":"Deje de comer alimentos azucarados."
+         "term":"This is a resin composite filling.",
+         "definition":"Este es un empaste de composite de resina."
       },
       {
-         "term":"Schedule a follow-up appointment.",
-         "definition":"Programe una cita de seguimiento."
+         "term":"We need to make an incision.",
+         "definition":"Necesitamos hacer una incisión."
       },
       {
-         "term":"Rinse your mouth with salt water.",
-         "definition":"Enjuague su boca con agua salada."
+         "term":"You should avoid hot drinks.",
+         "definition":"Debes evitar bebidas calientes."
       },
       {
-         "term":"Rinse your mouth twice a day.",
-         "definition":"Enjuague su boca dos veces al día."
+         "term":"This is a preventive treatment.",
+         "definition":"Este es un tratamiento preventivo."
       },
       {
-         "term":"Remove your dentures at night.",
-         "definition":"Quítese las dentaduras por la noche."
+         "term":"You need to use fluoride toothpaste.",
+         "definition":"Necesitas usar pasta de dientes con flúor."
       },
       {
-         "term":"Place the ice pack on your face.",
-         "definition":"Coloque la bolsa de hielo en su cara."
+         "term":"This will reduce inflammation.",
+         "definition":"Esto reducirá la inflamación."
       },
       {
-         "term":"Open your mouth wide.",
-         "definition":"Abra bien la boca."
+         "term":"You need to rinse with salt water.",
+         "definition":"Necesitas enjuagarte con agua salada."
       },
       {
-         "term":"Keep your mouth clean.",
-         "definition":"Mantenga su boca limpia."
+         "term":"We need to perform a biopsy.",
+         "definition":"Necesitamos realizar una biopsia."
       },
       {
-         "term":"Keep the area clean.",
-         "definition":"Mantenga el área limpia."
+         "term":"You should avoid sticky foods.",
+         "definition":"Debes evitar alimentos pegajosos."
       },
       {
-         "term":"It is important to floss daily.",
-         "definition":"Es importante usar hilo dental diariamente."
+         "term":"This is a temporary solution.",
+         "definition":"Esta es una solución temporal."
       },
       {
-         "term":"It is important to brush after every meal.",
-         "definition":"Es importante cepillarse después de cada comida."
+         "term":"You need to see a dental hygienist.",
+         "definition":"Necesitas ver a un higienista dental."
       },
       {
-         "term":"It is important to brush twice a day.",
-         "definition":"Es importante cepillarse dos veces al día."
+         "term":"We will apply a desensitizing gel.",
+         "definition":"Aplicaremos un gel desensibilizante."
       },
       {
-         "term":"It is important to avoid sugary foods.",
-         "definition":"Es importante evitar alimentos azucarados."
+         "term":"This is a mild anesthetic.",
+         "definition":"Este es un anestésico suave."
       },
       {
-         "term":"It is important to attend regular check-ups.",
-         "definition":"Es importante asistir a chequeos regulares."
+         "term":"You need to brush your tongue.",
+         "definition":"Necesitas cepillarte la lengua."
       },
       {
-         "term":"It is important to address this soon.",
-         "definition":"Es importante abordar esto pronto."
+         "term":"We will need to take another impression.",
+         "definition":"Necesitaremos tomar otra impresión."
       },
       {
-         "term":"Inflammation is causing the pain.",
-         "definition":"La inflamación está causando el dolor."
+         "term":"You need to come back in two weeks.",
+         "definition":"Necesitas regresar en dos semanas."
       },
       {
-         "term":"Inflammation can lead to gum disease.",
-         "definition":"La inflamación puede llevar a la enfermedad de las encías."
+         "term":"This is a dental implant.",
+         "definition":"Este es un implante dental."
       },
       {
-         "term":"I will prescribe an antibiotic.",
-         "definition":"Le recetaré un antibiótico."
+         "term":"You need to drink plenty of water.",
+         "definition":"Necesitas beber mucha agua."
       },
       {
-         "term":"I will prescribe a painkiller.",
-         "definition":"Le recetaré un analgésico."
+         "term":"This will help with healing.",
+         "definition":"Esto ayudará con la curación."
       },
       {
-         "term":"I will place a temporary crown.",
-         "definition":"Colocaré una corona temporal."
+         "term":"We will remove the temporary crown.",
+         "definition":"Quitaremos la corona temporal."
       },
       {
-         "term":"I will need to take x-rays.",
-         "definition":"Necesitaré tomar radiografías."
+         "term":"This is a non-invasive procedure.",
+         "definition":"Este es un procedimiento no invasivo."
       },
       {
-         "term":"I will need to check your bite.",
-         "definition":"Necesitaré revisar su mordida."
+         "term":"We need to monitor the infection.",
+         "definition":"Necesitamos monitorear la infección."
       },
       {
-         "term":"I will need to do a thorough examination.",
-         "definition":"Necesitaré hacer un examen exhaustivo."
+         "term":"This is a resin bonding treatment.",
+         "definition":"Este es un tratamiento de unión de resina."
       },
       {
-         "term":"I will explain the procedure.",
-         "definition":"Le explicaré el procedimiento."
+         "term":"You need to use mouthwash daily.",
+         "definition":"Necesitas usar enjuague bucal diariamente."
       },
       {
-         "term":"I will adjust your braces.",
-         "definition":"Ajustaré sus frenos."
+         "term":"This is a minimally invasive procedure.",
+         "definition":"Este es un procedimiento mínimamente invasivo."
       },
       {
-         "term":"I will adjust your dentures.",
-         "definition":"Ajustaré sus dentaduras."
+         "term":"You should avoid alcohol.",
+         "definition":"Debes evitar el alcohol."
       },
       {
-         "term":"I recommend a deep cleaning.",
-         "definition":"Recomiendo una limpieza profunda."
+         "term":"We need to apply a topical anesthetic.",
+         "definition":"Necesitamos aplicar un anestésico tópico."
       },
       {
-         "term":"I need to clean the affected area.",
-         "definition":"Necesito limpiar el área afectada."
-      },
-      {
-         "term":"I need to check your gums.",
-         "definition":"Necesito revisar sus encías."
-      },
-      {
-         "term":"I need to adjust your bite.",
-         "definition":"Necesito ajustar su mordida."
-      },
-      {
-         "term":"I have completed the examination.",
-         "definition":"He completado el examen."
-      },
-      {
-         "term":"I have applied the filling.",
-         "definition":"He aplicado el empaste."
-      },
-      {
-         "term":"I am going to numb the area.",
-         "definition":"Voy a adormecer el área."
-      },
-      {
-         "term":"How often do you floss?",
-         "definition":"¿Con qué frecuencia usa hilo dental?"
-      },
-      {
-         "term":"How often do you brush?",
-         "definition":"¿Con qué frecuencia se cepilla?"
-      },
-      {
-         "term":"How is your pain?",
-         "definition":"¿Cómo está su dolor?"
-      },
-      {
-         "term":"Have you noticed any bleeding?",
-         "definition":"¿Ha notado algún sangrado?"
-      },
-      {
-         "term":"Flossing will help prevent cavities.",
-         "definition":"El uso de hilo dental ayudará a prevenir caries."
-      },
-      {
-         "term":"Flossing is important for gum health.",
-         "definition":"El uso de hilo dental es importante para la salud de las encías."
-      },
-      {
-         "term":"Floss between each tooth.",
-         "definition":"Use hilo dental entre cada diente."
-      },
-      {
-         "term":"Floss after every meal.",
-         "definition":"Use hilo dental después de cada comida."
-      },
-      {
-         "term":"Continue brushing twice a day.",
-         "definition":"Continúe cepillándose dos veces al día."
-      },
-      {
-         "term":"Avoid hard foods.",
-         "definition":"Evite alimentos duros."
-      },
-      {
-         "term":"Avoid acidic foods.",
-         "definition":"Evite alimentos ácidos."
-      },
-      {
-         "term":"Avoid sugary foods and drinks.",
-         "definition":"Evite alimentos y bebidas azucaradas."
-      },
-      {
-         "term":"Avoid smoking.",
-         "definition":"Evite fumar."
-      },
-      {
-         "term":"Avoid chewing on ice.",
-         "definition":"Evite masticar hielo."
-      },
-      {
-         "term":"An implant is needed.",
-         "definition":"Se necesita un implante."
-      },
-      {
-         "term":"A sealant can protect your teeth.",
-         "definition":"Un sellador puede proteger sus dientes."
-      },
-      {
-         "term":"A regular check-up is important.",
-         "definition":"Un chequeo regular es importante."
-      },
-      {
-         "term":"A root canal is necessary.",
-         "definition":"Es necesario un tratamiento de conducto."
-      },
-      {
-         "term":"A filling is needed.",
-         "definition":"Se necesita un empaste."
-      },
-      {
-         "term":"A cavity was detected.",
-         "definition":"Se detectó una caries."
+         "term":"This will prevent further decay.",
+         "definition":"Esto evitará más caries."
       }
    ]
 }
