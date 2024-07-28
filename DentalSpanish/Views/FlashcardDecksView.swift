@@ -31,7 +31,7 @@ struct FlashcardDecksView: View {
                             .opacity(0.6))
                     }
                 }
-                .navigationTitle("Flashcards")
+                .navigationTitle("Study Flashcards")
                 .navigationBarTitleDisplayMode(.large)
                 .padding()
             }

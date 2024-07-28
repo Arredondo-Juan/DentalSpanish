@@ -12,15 +12,11 @@ struct TermsListView: View {
     @State private var searchText = ""
 
     var filteredTerms: [Flashcard] {
-        viewModel.termsDeck
-            .filter { $0.term.contains(searchText) || searchText.isEmpty }
-            .sorted { $0.term.localizedCompare($1.term) == .orderedAscending }
+        viewModel.termsDeck.filter { $0.term.contains(searchText) || searchText.isEmpty }
     }
 
     var filteredPhrases: [Flashcard] {
-        viewModel.phrasesDeck
-            .filter { $0.term.contains(searchText) || searchText.isEmpty }
-            .sorted { $0.term.localizedCompare($1.term) == .orderedAscending }
+        viewModel.phrasesDeck.filter { $0.term.contains(searchText) || searchText.isEmpty }
     }
 
     var body: some View {
@@ -28,24 +24,32 @@ struct TermsListView: View {
             List {
                 Section(header: Text("Terms")) {
                     ForEach(filteredTerms) { flashcard in
-                        VStack(alignment: .leading) {
-                            Text(flashcard.term)
-                                .font(.headline)
-                            Text(flashcard.definition)
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(flashcard.term)
+                                    .font(.headline)
+                                Text(flashcard.definition)
+                                    .font(.subheadline)
+                                    .foregroundColor(.gray)
+                            }
+                            Spacer()
+                            PlaybackButton(text: flashcard.definition)
                         }
                     }
                 }
 
                 Section(header: Text("Phrases")) {
                     ForEach(filteredPhrases) { flashcard in
-                        VStack(alignment: .leading) {
-                            Text(flashcard.term)
-                                .font(.headline)
-                            Text(flashcard.definition)
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(flashcard.term)
+                                    .font(.headline)
+                                Text(flashcard.definition)
+                                    .font(.subheadline)
+                                    .foregroundColor(.gray)
+                            }
+                            Spacer()
+                            PlaybackButton(text: flashcard.definition)
                         }
                     }
                 }

@@ -20,6 +20,7 @@
 		DC140B6F2C53369E00B47616 /* FlashcardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC140B6E2C53369E00B47616 /* FlashcardListView.swift */; };
 		DC56432F2C53D82A001A01A8 /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC56432E2C53D82A001A01A8 /* FlashcardView.swift */; };
 		DC5643332C5423EA001A01A8 /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5643322C5423EA001A01A8 /* DraggableCardView.swift */; };
+		DCD77DBD2C55D0550091E225 /* PlaybackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD77DBC2C55D0550091E225 /* PlaybackButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		DC140B6E2C53369E00B47616 /* FlashcardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardListView.swift; sourceTree = "<group>"; };
 		DC56432E2C53D82A001A01A8 /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
 		DC5643322C5423EA001A01A8 /* DraggableCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableCardView.swift; sourceTree = "<group>"; };
+		DCD77DBC2C55D0550091E225 /* PlaybackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		DC140B512C5331E300B47616 /* DentalSpanish */ = {
 			isa = PBXGroup;
 			children = (
+				DCD77DBB2C55D0430091E225 /* Components */,
 				DC140B672C53336000B47616 /* Views */,
 				DC140B662C53335500B47616 /* ViewModels */,
 				DC140B652C53334E00B47616 /* Models */,
@@ -116,6 +119,14 @@
 				DC07EDB52C54A98A00B74747 /* MainView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DCD77DBB2C55D0430091E225 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DCD77DBC2C55D0550091E225 /* PlaybackButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD77DBD2C55D0550091E225 /* PlaybackButton.swift in Sources */,
 				DC5643332C5423EA001A01A8 /* DraggableCardView.swift in Sources */,
 				DC07EDB62C54A98A00B74747 /* MainView.swift in Sources */,
 				DC140B6D2C53340D00B47616 /* FlashcardViewModel.swift in Sources */,
