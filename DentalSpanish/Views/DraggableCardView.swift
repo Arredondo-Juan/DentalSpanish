@@ -24,7 +24,7 @@ struct DraggableCardView: View {
                 VStack {
                     Text(flashcard.definition)
                         .font(.title)
-                        .font(.semibold)
+                        .fontWeight(.semibold)
                         .multilineTextAlignment(.center) // Center the text
                         .padding()
                     PlaybackButton(text: flashcard.definition)
