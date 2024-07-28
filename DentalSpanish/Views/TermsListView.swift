@@ -13,13 +13,13 @@ struct TermsListView: View {
 
     var filteredTerms: [Flashcard] {
         viewModel.termsDeck
-            .filter { $0.term.contains(searchText) || searchText.isEmpty }
+            .filter { $0.term.localizedCaseInsensitiveContains(searchText) || searchText.isEmpty }
             .sorted { $0.term.localizedCompare($1.term) == .orderedAscending }
     }
 
     var filteredPhrases: [Flashcard] {
         viewModel.phrasesDeck
-            .filter { $0.term.contains(searchText) || searchText.isEmpty }
+            .filter { $0.term.localizedCaseInsensitiveContains(searchText) || searchText.isEmpty }
             .sorted { $0.term.localizedCompare($1.term) == .orderedAscending }
     }
 
@@ -66,10 +66,4 @@ struct TermsListView: View {
             .searchable(text: $searchText)
         }
     }
-}
-
-
-
-#Preview {
-    TermsListView()
 }
