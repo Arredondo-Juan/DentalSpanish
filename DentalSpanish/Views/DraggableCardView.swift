@@ -8,7 +8,7 @@ struct DraggableCardView: View {
     @State private var offset: CGSize = .zero
     @State private var showingDeleteConfirmation = false
     @State private var showingTerm = true // Tracks which side is visible
-
+    
     var body: some View {
         VStack {
             VStack {
@@ -51,18 +51,25 @@ struct DraggableCardView: View {
                     }
                     .onEnded { _ in
                         if abs(self.offset.width) > 100 {
-                            if self.offset.width > 0 {
-                                // Swipe right - dismiss
-                                self.flashcards.removeAll { $0.id == self.flashcard.id }
-                            } else {
-                                // Swipe left - save card
-                                viewModel.saveFlashcard(self.flashcard)
-                                self.flashcards.removeAll { $0.id == self.flashcard.id }
+                            withAnimation {
+                                if self.offset.width > 0 {
+                                    // Swipe right - dismiss
+                                    self.flashcards.removeAll { $0.id == self.flashcard.id }
+                                } else {
+                                    // Swipe left - save card
+                                    viewModel.saveFlashcard(self.flashcard)
+                                    self.flashcards.removeAll { $0.id == self.flashcard.id }
+                                }
+                                self.offset = .zero
+                            }
+                        } else {
+                            withAnimation {
+                                self.offset = .zero
                             }
                         }
-                        self.offset = .zero
                     }
             )
+            
             .onTapGesture {
                 withAnimation {
                     showingTerm.toggle()
@@ -74,4 +81,3 @@ struct DraggableCardView: View {
         .padding()
     }
 }
-

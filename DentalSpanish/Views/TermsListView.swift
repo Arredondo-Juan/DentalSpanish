@@ -10,15 +10,15 @@ import SwiftUI
 struct TermsListView: View {
     @EnvironmentObject var viewModel: FlashcardViewModel
     @State private var searchText = ""
-
+    
     var filteredTerms: [Flashcard] {
         viewModel.termsDeck.filter { $0.term.contains(searchText) || searchText.isEmpty }
     }
-
+    
     var filteredPhrases: [Flashcard] {
         viewModel.phrasesDeck.filter { $0.term.contains(searchText) || searchText.isEmpty }
     }
-
+    
     var body: some View {
         NavigationView {
             List {
@@ -40,7 +40,7 @@ struct TermsListView: View {
                         }
                     }
                 }
-
+                
                 Section(header: Text("Phrases")) {
                     LazyVStack {
                         ForEach(filteredPhrases) { flashcard in

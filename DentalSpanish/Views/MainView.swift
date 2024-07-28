@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @EnvironmentObject var viewModel: FlashcardViewModel
-
+    
     var body: some View {
         TabView {
             TermsListView()
