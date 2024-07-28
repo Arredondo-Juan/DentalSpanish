@@ -10,52 +10,56 @@ import SwiftUI
 struct TermsListView: View {
     @EnvironmentObject var viewModel: FlashcardViewModel
     @State private var searchText = ""
-    
+
     var filteredTerms: [Flashcard] {
         viewModel.termsDeck.filter { $0.term.contains(searchText) || searchText.isEmpty }
     }
-    
+
     var filteredPhrases: [Flashcard] {
         viewModel.phrasesDeck.filter { $0.term.contains(searchText) || searchText.isEmpty }
     }
-    
+
     var body: some View {
         NavigationView {
             List {
                 Section(header: Text("Terms")) {
-                    LazyVStack {
-                        ForEach(filteredTerms) { flashcard in
-                            HStack {
-                                VStack(alignment: .leading) {
-                                    Text(flashcard.term)
-                                        .font(.headline)
-                                    Text(flashcard.definition)
-                                        .font(.subheadline)
-                                        .foregroundColor(.gray)
-                                }
-                                Spacer()
-                                PlaybackButton(text: flashcard.definition)
+                    ForEach(filteredTerms) { flashcard in
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(flashcard.term)
+                                    .font(.headline)
+                                Text(flashcard.definition)
+                                    .font(.subheadline)
+                                    .foregroundColor(.gray)
                             }
-                            .padding(.vertical, 4)
+                            Spacer()
+                            Button(action: {
+                                viewModel.speak(flashcard.definition)
+                            }) {
+                                Image(systemName: "speaker.wave.2.fill")
+                                    .padding(.leading, 10)
+                            }
                         }
                     }
                 }
-                
+
                 Section(header: Text("Phrases")) {
-                    LazyVStack {
-                        ForEach(filteredPhrases) { flashcard in
-                            HStack {
-                                VStack(alignment: .leading) {
-                                    Text(flashcard.term)
-                                        .font(.headline)
-                                    Text(flashcard.definition)
-                                        .font(.subheadline)
-                                        .foregroundColor(.gray)
-                                }
-                                Spacer()
-                                PlaybackButton(text: flashcard.definition)
+                    ForEach(filteredPhrases) { flashcard in
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(flashcard.term)
+                                    .font(.headline)
+                                Text(flashcard.definition)
+                                    .font(.subheadline)
+                                    .foregroundColor(.gray)
                             }
-                            .padding(.vertical, 4)
+                            Spacer()
+                            Button(action: {
+                                viewModel.speak(flashcard.definition)
+                            }) {
+                                Image(systemName: "speaker.wave.2.fill")
+                                    .padding(.leading, 10)
+                            }
                         }
                     }
                 }
@@ -65,6 +69,7 @@ struct TermsListView: View {
         }
     }
 }
+
 
 
 #Preview {
