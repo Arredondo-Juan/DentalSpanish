@@ -12,11 +12,15 @@ struct TermsListView: View {
     @State private var searchText = ""
 
     var filteredTerms: [Flashcard] {
-        viewModel.termsDeck.filter { $0.term.contains(searchText) || searchText.isEmpty }
+        viewModel.termsDeck
+            .filter { $0.term.contains(searchText) || searchText.isEmpty }
+            .sorted { $0.term.localizedCompare($1.term) == .orderedAscending }
     }
 
     var filteredPhrases: [Flashcard] {
-        viewModel.phrasesDeck.filter { $0.term.contains(searchText) || searchText.isEmpty }
+        viewModel.phrasesDeck
+            .filter { $0.term.contains(searchText) || searchText.isEmpty }
+            .sorted { $0.term.localizedCompare($1.term) == .orderedAscending }
     }
 
     var body: some View {
