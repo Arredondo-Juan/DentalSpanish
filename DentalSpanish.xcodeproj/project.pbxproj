@@ -21,6 +21,7 @@
 		DC56432F2C53D82A001A01A8 /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC56432E2C53D82A001A01A8 /* FlashcardView.swift */; };
 		DC5643332C5423EA001A01A8 /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5643322C5423EA001A01A8 /* DraggableCardView.swift */; };
 		DCD77DBD2C55D0550091E225 /* PlaybackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD77DBC2C55D0550091E225 /* PlaybackButton.swift */; };
+		DCD77DBF2C55DD770091E225 /* SpeechSynthesizerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD77DBE2C55DD770091E225 /* SpeechSynthesizerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		DC56432E2C53D82A001A01A8 /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
 		DC5643322C5423EA001A01A8 /* DraggableCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableCardView.swift; sourceTree = "<group>"; };
 		DCD77DBC2C55D0550091E225 /* PlaybackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackButton.swift; sourceTree = "<group>"; };
+		DCD77DBE2C55DD770091E225 /* SpeechSynthesizerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSynthesizerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				DC140B682C53338200B47616 /* Flashcard.swift */,
 				DC140B6A2C5333B900B47616 /* DeckType.swift */,
+				DCD77DBE2C55DD770091E225 /* SpeechSynthesizerManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD77DBF2C55DD770091E225 /* SpeechSynthesizerManager.swift in Sources */,
 				DCD77DBD2C55D0550091E225 /* PlaybackButton.swift in Sources */,
 				DC5643332C5423EA001A01A8 /* DraggableCardView.swift in Sources */,
 				DC07EDB62C54A98A00B74747 /* MainView.swift in Sources */,

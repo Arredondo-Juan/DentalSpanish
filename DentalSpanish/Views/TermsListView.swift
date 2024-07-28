@@ -23,33 +23,39 @@ struct TermsListView: View {
         NavigationView {
             List {
                 Section(header: Text("Terms")) {
-                    ForEach(filteredTerms) { flashcard in
-                        HStack {
-                            VStack(alignment: .leading) {
-                                Text(flashcard.term)
-                                    .font(.headline)
-                                Text(flashcard.definition)
-                                    .font(.subheadline)
-                                    .foregroundColor(.gray)
+                    LazyVStack {
+                        ForEach(filteredTerms) { flashcard in
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text(flashcard.term)
+                                        .font(.headline)
+                                    Text(flashcard.definition)
+                                        .font(.subheadline)
+                                        .foregroundColor(.gray)
+                                }
+                                Spacer()
+                                PlaybackButton(text: flashcard.definition)
                             }
-                            Spacer()
-                            PlaybackButton(text: flashcard.definition)
+                            .padding(.vertical, 4)
                         }
                     }
                 }
 
                 Section(header: Text("Phrases")) {
-                    ForEach(filteredPhrases) { flashcard in
-                        HStack {
-                            VStack(alignment: .leading) {
-                                Text(flashcard.term)
-                                    .font(.headline)
-                                Text(flashcard.definition)
-                                    .font(.subheadline)
-                                    .foregroundColor(.gray)
+                    LazyVStack {
+                        ForEach(filteredPhrases) { flashcard in
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text(flashcard.term)
+                                        .font(.headline)
+                                    Text(flashcard.definition)
+                                        .font(.subheadline)
+                                        .foregroundColor(.gray)
+                                }
+                                Spacer()
+                                PlaybackButton(text: flashcard.definition)
                             }
-                            Spacer()
-                            PlaybackButton(text: flashcard.definition)
+                            .padding(.vertical, 4)
                         }
                     }
                 }
@@ -59,6 +65,7 @@ struct TermsListView: View {
         }
     }
 }
+
 
 #Preview {
     TermsListView()

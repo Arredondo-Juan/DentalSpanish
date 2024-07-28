@@ -6,27 +6,18 @@
 //
 
 import SwiftUI
-import AVFoundation
 
 struct PlaybackButton: View {
-    
     let text: String
-    private let synthesizer = AVSpeechSynthesizer()
     
     var body: some View {
         Button(action: {
-            speak(text:text)
+            SpeechSynthesizerManager.shared.speak(text: text)
         }) {
-            Image(systemName: "speaker.wave.2")
-                .foregroundColor(.black)
+            Image(systemName: "speaker.3.fill")
+                .foregroundColor(.blue)
                 .padding()
         }
-    }
-    
-    private func speak(text: String) {
-        let utterance = AVSpeechUtterance(string: text)
-        utterance.voice = AVSpeechSynthesisVoice(language: "es-MX")
-        synthesizer.speak(utterance)
     }
 }
 

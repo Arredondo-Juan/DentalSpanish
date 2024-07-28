@@ -22,8 +22,6 @@ struct FlashcardListView: View {
                 ZStack {
                     ForEach(Array(flashcards.enumerated()), id: \.element.id) { index, flashcard in
                         DraggableCardView(flashcards: $flashcards, flashcard: flashcard)
-//                            .padding(.horizontal)
-//                            .padding(.top, 20)
                     }
                 }
                 .padding()
