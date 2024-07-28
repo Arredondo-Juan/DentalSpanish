@@ -17,23 +17,14 @@ class FlashcardViewModel: ObservableObject {
     }
     
     func loadFlashcards() {
-        DispatchQueue.global(qos: .userInitiated).async {
-            guard let url = Bundle.main.url(forResource: "dentalspanishdata", withExtension: "json") else {
-                print("Failed to locate file in bundle.")
-                return
-            }
-            
+        if let url = Bundle.main.url(forResource: "dentalspanishdata", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
-                let decoder = JSONDecoder()
-                let flashcards = try decoder.decode([String: [Flashcard]].self, from: data)
-                
-                DispatchQueue.main.async {
-                    self.termsDeck = flashcards["termsDeck"] ?? []
-                    self.phrasesDeck = flashcards["phrasesDeck"] ?? []
-                }
+                let flashcardData = try JSONDecoder().decode(FlashcardData.self, from: data)
+                termsDeck = flashcardData.termsDeck
+                phrasesDeck = flashcardData.phrasesDeck
             } catch {
-                print("Failed to decode JSON: \(error.localizedDescription)")
+                print("Error loading flashcards: \(error)")
             }
         }
     }
@@ -43,4 +34,8 @@ class FlashcardViewModel: ObservableObject {
             savedDeck.append(flashcard)
         }
     }
-}
+    
+    func speak(_ text: String) {
+            SpeechSynthesizerManager.shared.speak(text)
+        }
+    }

@@ -24,20 +24,17 @@ struct TermsListView: View {
             List {
                 Section(header: Text("Terms")) {
                     ForEach(filteredTerms) { flashcard in
-                        HStack {
-                            VStack(alignment: .leading) {
-                                Text(flashcard.term)
-                                    .font(.headline)
-                                Text(flashcard.definition)
-                                    .font(.subheadline)
-                                    .foregroundColor(.gray)
-                            }
-                            Spacer()
+                        VStack(alignment: .leading) {
+                            Text(flashcard.term)
+                                .font(.headline)
+                            Text(flashcard.definition)
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
                             Button(action: {
                                 viewModel.speak(flashcard.definition)
                             }) {
                                 Image(systemName: "speaker.wave.2.fill")
-                                    .padding(.leading, 10)
+                                    .padding(.top, 10)
                             }
                         }
                     }
@@ -45,20 +42,17 @@ struct TermsListView: View {
 
                 Section(header: Text("Phrases")) {
                     ForEach(filteredPhrases) { flashcard in
-                        HStack {
-                            VStack(alignment: .leading) {
-                                Text(flashcard.term)
-                                    .font(.headline)
-                                Text(flashcard.definition)
-                                    .font(.subheadline)
-                                    .foregroundColor(.gray)
-                            }
-                            Spacer()
+                        VStack(alignment: .leading) {
+                            Text(flashcard.term)
+                                .font(.headline)
+                            Text(flashcard.definition)
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
                             Button(action: {
                                 viewModel.speak(flashcard.definition)
                             }) {
                                 Image(systemName: "speaker.wave.2.fill")
-                                    .padding(.leading, 10)
+                                    .padding(.top, 10)
                             }
                         }
                     }

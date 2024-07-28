@@ -1,5 +1,4 @@
 import SwiftUI
-import AVFoundation
 
 struct DraggableCardView: View {
     @EnvironmentObject var viewModel: FlashcardViewModel
@@ -11,73 +10,64 @@ struct DraggableCardView: View {
     
     var body: some View {
         VStack {
-            VStack {
-                if showingTerm {
-                    Text(flashcard.term)
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .padding()
-                        .multilineTextAlignment(.center)
-                        .frame(width: 300, height: 180)
-                        .background(RoundedRectangle(cornerRadius: 15)
-                            .fill(Color.white)
-                            .shadow(radius: 5, y: 5))
-                } else {
+            if showingTerm {
+                Text(flashcard.term)
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                    .padding()
+                    .frame(width: 300, height: 180)
+                    .background(RoundedRectangle(cornerRadius: 15)
+                        .fill(Color.white)
+                        .shadow(radius: 2.5, y: 5))
+            } else {
+                VStack {
                     Text(flashcard.definition)
-                        .font(.title)
-                        .fontWeight(.semibold)
-                        .padding()
+                        .font(.title2)
                         .multilineTextAlignment(.center)
-                        .frame(width: 300, height: 180)
-                        .background(RoundedRectangle(cornerRadius: 15)
-                            .fill(Color.white)
-                            .shadow(radius: 5, y: 5))
-                        .overlay(
-                            VStack {
-                                Spacer()
-                                HStack {
-                                    Spacer()
-                                    PlaybackButton(text: flashcard.definition)
-                                        .padding()
-                                }
-                            }
-                        )
-                }
-            }
-            .gesture(
-                DragGesture()
-                    .onChanged { gesture in
-                        self.offset = gesture.translation
+                        .padding()
+                    Button(action: {
+                        viewModel.speak(flashcard.definition)
+                    }) {
+                        Image(systemName: "speaker.wave.2.fill")
+                            .padding(.top, 10)
                     }
-                    .onEnded { _ in
-                        if abs(self.offset.width) > 100 {
-                            withAnimation {
-                                if self.offset.width > 0 {
-                                    // Swipe right - dismiss
-                                    self.flashcards.removeAll { $0.id == self.flashcard.id }
-                                } else {
-                                    // Swipe left - save card
-                                    viewModel.saveFlashcard(self.flashcard)
-                                    self.flashcards.removeAll { $0.id == self.flashcard.id }
-                                }
-                                self.offset = .zero
+                }
+                .frame(width: 300, height: 180)
+                .background(RoundedRectangle(cornerRadius: 15)
+                    .fill(Color.white)
+                    .shadow(radius: 2.5, y: 5))
+            }
+        }
+        .gesture(
+            DragGesture()
+                .onChanged { gesture in
+                    self.offset = gesture.translation
+                }
+                .onEnded { _ in
+                    if abs(self.offset.width) > 100 {
+                        withAnimation {
+                            if self.offset.width > 0 {
+                                // Swipe right - dismiss
+                                self.flashcards.removeAll { $0.id == self.flashcard.id }
+                            } else {
+                                // Swipe left - save card
+                                viewModel.saveFlashcard(self.flashcard)
+                                self.flashcards.removeAll { $0.id == self.flashcard.id }
                             }
-                        } else {
-                            withAnimation {
-                                self.offset = .zero
-                            }
+                            self.offset = .zero
+                        }
+                    } else {
+                        withAnimation {
+                            self.offset = .zero
                         }
                     }
-            )
-            
-            .onTapGesture {
-                withAnimation {
-                    showingTerm.toggle()
                 }
+        )
+        .onTapGesture {
+            withAnimation {
+                showingTerm.toggle()
             }
-            .offset(y: -50) // Adjust this value to position the card correctly
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-        .padding()
     }
 }
