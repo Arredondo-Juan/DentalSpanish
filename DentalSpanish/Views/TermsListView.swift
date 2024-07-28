@@ -24,7 +24,7 @@ struct TermsListView: View {
             List {
                 Section(header: Text("Terms")) {
                     ForEach(filteredTerms) { flashcard in
-                        VStack(alignment: .leading) {
+                        LazyVStack(alignment: .leading) {
                             Text(flashcard.term)
                                 .font(.headline)
                             Text(flashcard.definition)
@@ -42,7 +42,7 @@ struct TermsListView: View {
 
                 Section(header: Text("Phrases")) {
                     ForEach(filteredPhrases) { flashcard in
-                        VStack(alignment: .leading) {
+                        LazyVStack(alignment: .leading) {
                             Text(flashcard.term)
                                 .font(.headline)
                             Text(flashcard.definition)

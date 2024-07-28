@@ -7,38 +7,37 @@ struct DraggableCardView: View {
     @State private var offset: CGSize = .zero
     @State private var showingDeleteConfirmation = false
     @State private var showingTerm = true // Tracks which side is visible
-    
+
     var body: some View {
         VStack {
             if showingTerm {
                 Text(flashcard.term)
                     .font(.title)
                     .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
+                    .multilineTextAlignment(.center) // Center the text
                     .padding()
                     .frame(width: 300, height: 180)
                     .background(RoundedRectangle(cornerRadius: 15)
                         .fill(Color.white)
-                        .shadow(radius: 2.5, y: 5))
+                        .shadow(radius: 5, y: 5))
             } else {
                 VStack {
                     Text(flashcard.definition)
-                        .font(.title2)
-                        .multilineTextAlignment(.center)
+                        .font(.title)
+                        .font(.semibold)
+                        .multilineTextAlignment(.center) // Center the text
                         .padding()
-                    Button(action: {
-                        viewModel.speak(flashcard.definition)
-                    }) {
-                        Image(systemName: "speaker.wave.2.fill")
-                            .padding(.top, 10)
-                    }
+                    PlaybackButton(text: flashcard.definition)
+                        .padding(.top, 10)
                 }
                 .frame(width: 300, height: 180)
                 .background(RoundedRectangle(cornerRadius: 15)
                     .fill(Color.white)
-                    .shadow(radius: 2.5, y: 5))
+                    .shadow(radius: 5, y: 5))
             }
         }
+        .offset(offset)
+        .rotationEffect(.degrees(Double(offset.width / 20)))
         .gesture(
             DragGesture()
                 .onChanged { gesture in
@@ -46,7 +45,7 @@ struct DraggableCardView: View {
                 }
                 .onEnded { _ in
                     if abs(self.offset.width) > 100 {
-                        withAnimation {
+                        withAnimation(.easeInOut) {
                             if self.offset.width > 0 {
                                 // Swipe right - dismiss
                                 self.flashcards.removeAll { $0.id == self.flashcard.id }
@@ -58,7 +57,7 @@ struct DraggableCardView: View {
                             self.offset = .zero
                         }
                     } else {
-                        withAnimation {
+                        withAnimation(.spring()) {
                             self.offset = .zero
                         }
                     }
@@ -68,6 +67,23 @@ struct DraggableCardView: View {
             withAnimation {
                 showingTerm.toggle()
             }
+        }
+        .contextMenu {
+            Button(action: {
+                showingDeleteConfirmation = true
+            }) {
+                Label("Delete", systemImage: "trash")
+            }
+        }
+        .alert(isPresented: $showingDeleteConfirmation) {
+            Alert(
+                title: Text("Delete Card"),
+                message: Text("Are you sure you want to delete this flashcard?"),
+                primaryButton: .destructive(Text("Delete")) {
+                    self.flashcards.removeAll { $0.id == self.flashcard.id }
+                },
+                secondaryButton: .cancel()
+            )
         }
     }
 }
